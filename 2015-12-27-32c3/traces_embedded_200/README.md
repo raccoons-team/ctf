@@ -54,11 +54,11 @@ Last 10 lines:
 
 Google says MDO3014 is a model of oscilloscope, so it is natural to assume that this is some kind of signal dump.
 Columns were helpfully labelled for us: there was TIME, CH1, TIME again and D0-D11. When I plotted the only analog
-signal, CH1, against time, it lookd like this (with D0 overlaid):
+signal, CH1, against time, it looked like this (with D0 overlaid):
 ![Clock](http://i.imgur.com/fAkL9h0.png)
 
 As we can see, digital signal was changing only on falling edge of CH1. Thus, it is safe to assume that CH1 is clock
-and we should sample digital channels on the rising edge of CH1. Thus, the first step of proccessing is:
+and we should sample digital channels on the *rising* edge of CH1. Thus, the first step of proccessing is:
 ```
 f=open("data.csv")
 fout=open("data2.csv","w")
@@ -70,7 +70,7 @@ for line in f.readlines()[25:-2]:
         fout.write(",".join(spl[4:]))
     last=ch1
 ```
-This gave us a file `data2.csv` looking like this:
+This gave us a file `data2.csv` looking like this (with more lines of course):
 ```
 1,1,0,1,1,0,1,1,1,1,1,1
 1,1,0,1,1,0,0,0,0,1,0,1
@@ -92,7 +92,7 @@ always "1", except for short bursts - and at those times, the remaining columns 
 signals were used for control, and thus we discarded them and lines in which any of them was 0.
 
 Another observation was that the remaining columns seemed to change smoothly, if interpreted as binary number, i.e. D9 was
-rarely changing, while D0, the least significant bit was almost random. Thus, we decided to change rows into their 
+rarely changing, while D0, the least significant bit, was almost random. Thus, we decided to change rows into their 
 numerical representation. Code:
 ```
 f=open("data2.csv")
@@ -114,7 +114,7 @@ position, we can notice something interesting:
 
 The plot looks pretty periodic. Closer look tells us that the exact period of repetition is 752. Thus, we decided to make
 a series of plots, each graphing only a range of data, 752 pieces long. First three graphs are available 
-[here](http://imgur.com/a/gB0AN). When watched as animation (for example, through holding right arrow in Image Viewer),
+[here](http://imgur.com/a/gB0AN). When watched as animation (or through holding right arrow in Image Viewer),
 we can see a smooth transition between "frames". However, this does not give us much useful information.
 
 In the end, we came up with idea of plotting this as a 3D surface plot (X axis - "frame" number, Y axis - index within
