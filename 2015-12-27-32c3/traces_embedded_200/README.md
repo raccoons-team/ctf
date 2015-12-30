@@ -109,4 +109,33 @@ for line in f.readlines():
 ```
 This gave us a list of numbers stored in "data3.csv". When plotted several thousand of those numbers against their
 position, we can notice something interesting:
-TODO
+![Period](http://i.imgur.com/p0FDJeI.png)
+The plot looks pretty periodic. Closer look tells us that the exact period of repetition is 752. Thus, we decided to make
+a series of plots, each graphing only a range of data, 752 pieces long. First three graphs are available 
+[here](http://imgur.com/a/gB0AN). When watched as animation (for example, through holding right arrow in Image Viewer),
+we can see a smooth transition between "frames". However, this does not give us much useful information.
+
+In the end, we came up with idea of plotting this as a 3D surface plot (X axis - "frame" number, Y axis - index within
+"frame", Z - value). However, since at this amount of data the plot would be unreadable, we decided to instead make a
+heat map in grayscale:
+```
+from scipy.misc import toimage
+
+f=open("data3.csv")
+data=f.readlines()
+data=[int(x)//4 for x in data] # Reducing range from 1023 to 255
+data2d=[]
+for i in range(len(data)//752):
+    data2d.append([])
+    for j in range(752):
+        data2d[-1].append(data[i*752+j])
+toimage(data2d).save("image.png")
+```
+This created an image, with each pixel's brightness representing number at that point and saved it in "image.png". This
+is the produced image:
+![Flag](http://i.imgur.com/As0mA99.png)
+As you can see, the picture makes sense (it is an oscilloscope), and a flag is visible on the screen.
+
+As an afterthought, it is likely that the first two channels (the ones we skipped), could actually help us in going for
+the flag - those were probably VSYNC and HSYNC signals. Still, we managed to do the task without their help.
+
