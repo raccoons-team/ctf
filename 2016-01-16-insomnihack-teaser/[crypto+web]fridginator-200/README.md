@@ -10,6 +10,7 @@
 
 ### PL
 Strona zawierała dwa formularz, jeden do rejestracji, drugi do logowania:
+
 ![Screenshot_2.png](Screenshot_2.png)![Screenshot_3.png](Screenshot_3.png)
 
 * Filename (name for created file)
