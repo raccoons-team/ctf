@@ -9,9 +9,18 @@
 ### ENG
 
 ### PL
-Strona zawierała dwa formularz, jeden do rejestracji, drugi do logowania:
+Strona zawierała dwa formularze, jeden do rejestracji, drugi do logowania:
 
-![Screenshot_2.png](Screenshot_2.png)![Screenshot_3.png](Screenshot_3.png)
+![Screenshot_1.png](Screenshot_1.png)![Screenshot_2.png](Screenshot_2.png)
+
+Po utworzeniu konta i zalogowaniu pokazywał się następujący widok:
+
+![Screenshot_3.png](Screenshot_3.png)
+
+Przy próbie wyszukania jogurtu Johna i wzięcia go z lodówki, niestety dostawaliśmy informację, że nie jesteśmy uprawnienie do zabrania jego rzeczy.
+
+![Screenshot_4.png](Screenshot_4.png)
+![Screenshot_5.png](Screenshot_5.png)
 
 * Filename (name for created file)
 * Content (content for created file, with limit to 7 chars only)
