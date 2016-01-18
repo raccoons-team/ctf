@@ -13,7 +13,7 @@ Strona zawierała dwa formularze, jeden do rejestracji, drugi do logowania:
 
 ![Screenshot_1.png](Screenshot_1.png)![Screenshot_2.png](Screenshot_2.png)
 
-Po utworzeniu konta i zalogowaniu pokazywał się następujący widok:
+Po utworzeniu konta i zalogowaniu, pokazywał się następujący widok:
 
 ![Screenshot_3.png](Screenshot_3.png)
 
@@ -21,6 +21,18 @@ Przy próbie wyszukania jogurtu Johna i wzięcia go z lodówki, niestety dostawa
 
 ![Screenshot_4.png](Screenshot_4.png)
 ![Screenshot_5.png](Screenshot_5.png)
+
+Każda próba wyszukiwania przenosiła nas na podstronę o url, przykładowo taki:
+`http://fridge.insomnihack.ch/search/67d4b8f78c33d07cbdc7293b9cd93b8f37231e5001982893f5c3a6494d14bbba/`
+
+Stwierdziliśmy, że to czego wyszukujemy jest kodowane, następnie przeniesieni zostajemy na podstronę z wygenerowanym w url zakodowanym zapytaniem. Musi tam więc nastąpić dekodowanie hasha z url, a następnie wyszukiwanie na podstawie zdekodowanych wartości.
+
+Po kilku próbach wysyłania zapytań, ustaliliśmy, że na jeden 32 znakowy hash, składa się maksymalnie 16 znaków. A także, że kodowanie wygląda następująco.
+[przedrostek][nasze zapytanie][przyrostek]. Ustaliliśmy również, że [przedrostek] składa się z 7 znaków. A [przyrostek], zależnie od tego czy wyszukujemy użytkowników, czy produktów, z 11 lub 13 znaków. [przedrostek] wyglądał nam od razu na wartość `search=` sprawdziliśmy i zgadzało się. [przyrostek] musiał posiadać informację w jakiej tabeli następuje wyszukiwanie. Napisalismy mały półautomatyczny skrypt [brute.py](brute.py), który pomógł nam litera po literze poznać wartość przyrostka, dla produktów wyglądał następująco `|type=object%01` (%01 to oczywiście 1 znak Start of Heading po zdekodowaniu).
+
+Pozostało nam więc zapełnić 1. blok znaków do 16 liter, czyli pamiętając, że 7 znaków pochłonie `search=` przesłać 9 dowolnych znaków. Następnie przesłać nasz kod, który chcemy wykonać, który musiał mieć długość równą wielokrotności liczby 16, aby nie pomieszać się z przyrostkiem.
+
+
 
 * Filename (name for created file)
 * Content (content for created file, with limit to 7 chars only)
