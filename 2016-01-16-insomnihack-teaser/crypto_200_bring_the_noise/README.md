@@ -9,5 +9,5 @@ arithmetic is made modulo 8.
 Solution:
 
 6 unknowns with 8 possibilities each gives a grand total of 8^6, or about 250000. This is reasonable search space. We need
-to evaluate the solutions somehow though - in my solution, I simply summed error (defined as difference between left and right
-sides) over all equations and chose solution with smallest error. My script worked on the first try.
+to rank the solution candidates somehow though - in our solution, we simply summed error (defined as difference between
+left and right sides) over all equations and chose solution with smallest error. Script (`solve.py`) worked on the first try.
