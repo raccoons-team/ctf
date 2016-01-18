@@ -23,14 +23,14 @@ Przy próbie wyszukania jogurtu Johna i wzięcia go z lodówki, niestety dostawa
 Każda próba wyszukiwania przenosiła nas na url, przykładowo taki:
 `http://fridge.insomnihack.ch/search/67d4b8f78c33d07cbdc7293b9cd93b8f37231e5001982893f5c3a6494d14bbba/`
 
-Stwierdziliśmy, że to czego wyszukujemy jest kodowane, następnie przeniesieni zostajemy na podstronę z wygenerowanym w url zakodowanym zapytaniem. Musi tam więc nastąpić dekodowanie hasha z url, a następnie wyszukiwanie na podstawie zdekodowanych wartości.
+Stwierdziliśmy, że to czego wyszukujemy jest kodowane, następnie przeniesieni zostajemy na podstronę z wygenerowanym i zakodowanym w url zapytaniem. Musi tam więc nastąpić dekodowanie hasha z url, a następnie wyszukiwanie na podstawie zdekodowanych wartości.
 
 Po kilku próbach wysyłania zapytań, ustaliliśmy, że na jeden 32 znakowy hash, składa się maksymalnie 16 znaków. A także, że kodowanie wygląda następująco.
 [przedrostek][nasze zapytanie][przyrostek]. Ustaliliśmy również, że [przedrostek] składa się z 7 znaków. A [przyrostek], zależnie od tego czy wyszukujemy użytkowników, czy produktów, z 11 lub 13 znaków. [przedrostek] wyglądał nam od razu na wartość `search=` sprawdziliśmy i zgadzało się. [przyrostek] musiał posiadać informację w jakiej tabeli następuje wyszukiwanie. Napisalismy mały półautomatyczny skrypt [brute.py](brute.py), który pomógł nam litera po literze poznać wartość przyrostka, dla produktów wyglądał następująco `|type=object%01` (%01 to oczywiście 1 znak Start of Heading po zdekodowaniu).
 
-Pozostało nam więc zapełnić 1. blok znaków do 16 liter, czyli pamiętając, że 7 znaków pochłonie `search=` przesłać 9 dowolnych znaków. Następnie przesłać nasz kod, który chcemy wykonać, który musiał mieć długość równą wielokrotności liczby 16, aby nie pomieszać się z przyrostkiem. Wygenerowany hash miał więc pierwszy blok który nas kompletnie nie interesował i ostatni blok, który również nas nie interesował. Skopiować należało hashe ze środkowych bloków i podstawić pod url `http://fridge.insomnihack.ch/search/...`
+Pozostało nam więc zapełnić 1. blok znaków do 16 liter, czyli pamiętając, że 7 znaków pochłonie `search=` przesłać 9 dowolnych znaków. Następnie przesłać nasz kod, który chcemy wykonać, który musiał mieć długość równą wielokrotności liczby 16, aby nie pomieszać się z blokiem przyrostka. Wygenerowany hash miał więc pierwszy blok który nas kompletnie nie interesował i ostatni blok, który również nas nie interesował. Skopiować należało hashe ze środkowych bloków i podstawić pod url `http://fridge.insomnihack.ch/search/...`
 
-Próbując różnych zapytań ustaliliśmy, że zapytanie do bazy wygląda następująco: `SELECT * FROM objsearch_X WHERE description LIKE ?` X było wartością z `type=`, która nie była filtrowana i mogliśmy tam wstrzyknąć nasze zapytanie.
+Próbując różnych zapytań ustaliliśmy, że zapytanie do bazy wygląda następująco: `SELECT * FROM objsearch_X WHERE description LIKE ?` X było wartością z `type=`, która nie była filtrowana i mogliśmy tam wstrzyknąć nasze spreparowane zapytanie.
 
 Stworzyliśmy więc zapytanie, które dzięki podatności na sqlinjection zwracało nam hasło Johna: `aaaaaaaaasearch=%%%%%%%%%%%%%%|type=object union select '5' as description, '1', (SELECT password FROM objsearch_user WHERE username ="John"), '3', '4' %01`
 
