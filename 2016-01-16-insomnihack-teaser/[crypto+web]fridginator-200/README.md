@@ -9,9 +9,7 @@
 ### ENG
 
 ### PL
-Strona zawierała dwa formularze, jeden do rejestracji, drugi do logowania:
-
-![Screenshot_1.png](Screenshot_1.png)![Screenshot_2.png](Screenshot_2.png)
+Strona przy powitaniu zawierała dwa formularze, jeden do rejestracji, drugi do logowania.
 
 Po utworzeniu konta i zalogowaniu, pokazywał się następujący widok:
 
