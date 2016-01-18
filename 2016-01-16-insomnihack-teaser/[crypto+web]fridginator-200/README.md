@@ -8,6 +8,46 @@
 
 ### ENG
 
+Site at the begining had register and login forms.
+
+After creating an account, and log in, showed that view:
+
+![Screenshot_3.png](Screenshot_3.png)
+
+When we try to search Johns Yoghurt and take it from the fridge, we got that info, that we are not allowed to do that.
+
+![Screenshot_4.png](Screenshot_4.png)
+![Screenshot_5.png](Screenshot_5.png)
+
+Any attempt to search, takes us on a URL, for example, like this:
+`http://fridge.insomnihack.ch/search/67d4b8f78c33d07cbdc7293b9cd93b8f37231e5001982893f5c3a6494d14bbba/`
+
+We figured out that, our query must be coded, next we are moved to the next page with generated and coded query in url. 
+
+After several attempts to send queries, we agreed that, one 32 lenght hash block consists of a maximum 16 chars. Coding looks as follows: [prefix][our query][suffix]. [prefix] has 7 chars. [suffix] depending on whether we search users or products, has 11 or 13 chars. [prefix] 7 chars, seems like `search=` at first sight, so we checked it, and confirmed, that was prefix. [suffix] must have information in which table we search. We wrote a small semi-auto python script [brute.py](brute.py), which helped us to know suffix letter by letter, for products suffix looked as `|type=object%01` (%01 hex ascii is real 1 char, representing Start of Heading).
+
+Next, we fill the 1. block to 16 chars, remembering that `search=` consume 7 chars, we must add 9 random chars. After that we must send our query, which must have increments of 16 chars, so as not to mix with suffix block. Generated hash has first and last block, which us completely not interested. We need copy middle blocks, and paste them in url `http://fridge.insomnihack.ch/search/...`
+
+Trying to various queries, we agreed that the finally query looks as: `SELECT * FROM objsearch_X WHERE description LIKE ?` X was a value from `type=`, which has not been filtered and could have injected our prepared query.
+
+We created a query, which returns password of John, thanks to the fact that query have sql injection vulnerability. `aaaaaaaaasearch=%%%%%%%%%%%%%%|type=object union select '5' as description, '1', (SELECT password FROM objsearch_user WHERE username ="John"), '3', '4' %01`
+
+Returned hash looked like:
+`5616962f8384b4f8850d8cd1c0adce98428072146d4f6e8cab3f5da04aecd14f4cd1be3e4e45844001c98397c8907136d85f1f4a5b5cf842c6a77e3eb42ad1b1d213bf36bb7a28f0a4162cdbbaf2384c58ffeeeefa2f0d7a37dea5ddbc39f008028cb773e1d9f162d3ab47c414cf441834ee8034b0799f5513e4bcaa777c29bbde35ba503c28f25be7860e4e6478924c8749a3e9bbbdd48c39aa45a0cd6c90a1d9cc5ea47c14d6fb630320a5dfa0bbca`
+
+We removed first and last block (32 chars per block, remember), which contain unnecessary prefix and suffix, and finally we have hash like that:
+
+`428072146d4f6e8cab3f5da04aecd14f4cd1be3e4e45844001c98397c8907136d85f1f4a5b5cf842c6a77e3eb42ad1b1d213bf36bb7a28f0a4162cdbbaf2384c58ffeeeefa2f0d7a37dea5ddbc39f008028cb773e1d9f162d3ab47c414cf441834ee8034b0799f5513e4bcaa777c29bbde35ba503c28f25be7860e4e6478924c8749a3e9bbbdd48c39aa45a0cd6c90a1`
+
+And real sql query looked like:
+
+`SELECT * FROM objsearch_object UNION SELECT '1' AS description, '2', (SELECT password FROM objsearch_user WHERE username ="John"), '4', '5' WHERE description LIKE %%%%%%%%%%%%%%`
+
+We got a search result, which contain all products (`SELECT * FROM objsearch_object`), and one extra entry contained the password of John in plaintext (`SELECT '1' AS description, '2', (SELECT password FROM objsearch_user WHERE username ="John"), '4', '5' WHERE description LIKE %%%%%%%%%%%%%%`).
+
+Finally next, we logon to the account of John, took yoghurt from the fridge, and got the flag.
+
+
 ### PL
 Strona przy powitaniu zawierała dwa formularze, jeden do rejestracji, drugi do logowania.
 
@@ -46,6 +86,6 @@ A zapytanie do bazy wyglądało rzeczywiście tak:
 
 `SELECT * FROM objsearch_object UNION SELECT '1' AS description, '2', (SELECT password FROM objsearch_user WHERE username ="John"), '4', '5' WHERE description LIKE %%%%%%%%%%%%%%`
 
-Dostaliśmy dzięki temu wynik zawierający wszystkie produkty, a także jeden dodatkowy wpis zawierający hasło Johna w plaintext.
+Dostaliśmy dzięki temu wynik zawierający wszystkie produkty (`SELECT * FROM objsearch_object`), a także jeden dodatkowy wpis zawierający hasło Johna w plaintext (`SELECT '1' AS description, '2', (SELECT password FROM objsearch_user WHERE username ="John"), '4', '5' WHERE description LIKE %%%%%%%%%%%%%%`).
 
 Następnie zalogowaliśmy się na konto Johna, wzięliśmy z lodówki jogurt i dostaliśmy flagę.
