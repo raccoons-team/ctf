@@ -221,9 +221,12 @@ return address, hinting at ROP exploit.
 
 Unfortunately, it is not trivial to find a seed that will generate needed exploit bytes - for instance, expected number
 of `0xff` bytes in 256 random bytes is about 1, so it is unlikely that there will be enough of them. However, we could
-create bytes as a sum of them (for instance, heat with a random value of 0x20, then 0x40 to get 0x60). This, 
-connected with fact that we could find a gadget moving stack pointer to a place containing only `0x00` bytes initially,
-allowed us to put a couple dozens of exploit code on the stack.
+create bytes as a sum of them (for instance, heat with a random value of 0x20, then 0x40 to get 0x60). There was one
+more important constraint - we could increase values of about 256 bytes, but decrease it (actually clear it) only four
+times - or three in practice. We worked around this restriction by first jumping to a large `pop` instruction, shifting
+our stack pointer by a couple of tens of bytes, right into a place containing only `0x00` bytes initially. This finally
+allowed us to put about 50 or 60 arbitrary bytes of explot on the stack. Some bytes where easier than others, so when
+our script said it couldn't find a good seed, we had to fiddle with jump locations a bit.
 
 We tried the following gadgets:
 - "/flag\x00" string somewhere
