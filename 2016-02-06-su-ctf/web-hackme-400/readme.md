@@ -1,4 +1,4 @@
-# Writeup for hackme
+# Writeup for hackme WEB (400)
 
 > Solves: 48
 > 
