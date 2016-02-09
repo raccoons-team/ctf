@@ -38,4 +38,4 @@ We did notice with great interest, that one menu link `help.pdf` had this route:
 
 We encode `../index.php` to base64 `Li4vaW5kZXgucGhw`, open `http://ctf.sharif.edu:35455/chal/hackme/677aa21d5725bb62/file.php?page=Li4vaW5kZXgucGhw`, and get source of `index.php` into downloaded .pdf file.
 
-One line was `shpaMessagePush("error: saved in sensitive_log_881027.txt");`. Interestingly, we again encode `../sensitive_log_881027.txt` to `Li4vc2Vuc2l0aXZlX2xvZ184ODEwMjcudHh0` and get this file by url `http://ctf.sharif.edu:35455/chal/hackme/677aa21d5725bb62/file.php?page=Li4vc2Vuc2l0aXZlX2xvZ184ODEwMjcudHh0`. Downloaded file contained FLAG
+One line in `index.php` was `shpaMessagePush("error: saved in sensitive_log_881027.txt");`. Interestingly, we again encode `../sensitive_log_881027.txt` to `Li4vc2Vuc2l0aXZlX2xvZ184ODEwMjcudHh0` and get this file by url `http://ctf.sharif.edu:35455/chal/hackme/677aa21d5725bb62/file.php?page=Li4vc2Vuc2l0aXZlX2xvZ184ODEwMjcudHh0`. Downloaded file contained FLAG
