@@ -1,7 +1,5 @@
 # Writeup for Bank CRYPTO (90) 
 
-> Solves: 48
-> 
 > Description: Everyone knows that banks are insecure. This one super secure and only allows only 20 transactions per session. I always wanted a million on my account.
 
 ![crypto90.zip](crypto90.zip)
