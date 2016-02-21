@@ -8,27 +8,27 @@
 
 I started analysing behaviour of the given script
 
-b@x:~/Desktop/task > python bank.py  
-WELCOME TO THE BANK BACKEND!  
-  
-Possible commands:  
-        help - Prints this message  
-        create <a> - Creates a new transaction with amount <a>  
-        complete <tid> <hash> - Completes a transaction to the current account. <tid> is the transaction ID to use and <hash> the verification hash.  
-  
-Your balance: 0, 20 transactions left.  
-Command: create 1000  
-Transaction #0 over 1000 initiated. Please complete it using the verification code: 527f692949701f5f273a1e552248342366  
-Your balance: 0, 19 transactions left.  
-Command: complete 0 527f692949701f5f273a1e552248342366  
-Transaction completed!  
-Your balance: 1000, 19 transactions left.  
-Command: create 5000  
-Transaction #1 over 5000 initiated. Please complete it using the verification code: 123f296909305f1f677a5e15620c746326  
-Your balance: 1000, 18 transactions left.  
-Command: create 9999  
-Too many transactions or amount too big!  
-Your balance: 1000, 18 transactions left.  
+    b@x:~/Desktop/task > python bank.py  
+    WELCOME TO THE BANK BACKEND!  
+      
+    Possible commands:  
+	    help - Prints this message  
+	    create <a> - Creates a new transaction with amount <a>  
+	    complete <tid> <hash> - Completes a transaction to the current account. <tid> is the transaction ID to use and <hash> the verification hash.  
+      
+    Your balance: 0, 20 transactions left.  
+    Command: create 1000  
+    Transaction #0 over 1000 initiated. Please complete it using the verification code: 527f692949701f5f273a1e552248342366  
+    Your balance: 0, 19 transactions left.  
+    Command: complete 0 527f692949701f5f273a1e552248342366  
+    Transaction completed!  
+    Your balance: 1000, 19 transactions left.  
+    Command: create 5000  
+    Transaction #1 over 5000 initiated. Please complete it using the verification code: 123f296909305f1f677a5e15620c746326  
+    Your balance: 1000, 18 transactions left.  
+    Command: create 9999  
+    Too many transactions or amount too big!  
+    Your balance: 1000, 18 transactions left.  
   
 We need to have a million or more in 'your balance' and seems that it's impossible to create transactions of 9999$ or more  
   
@@ -45,17 +45,17 @@ class Transaction is created after we type command 'create' and it remember the 
   
 below is a fragment of code from command handled  
   
-elif("complete" in cmd):  
-			[.......]  
-			if(len(h) != 34):  
-				print 'Wrong verification length'  
-				continue  
-			tn = A.get_t()[t]     #get transaction of number t  
-			tn = C.decrypt(tn, h) #decryption: tn - transaction, h - verification code  
-			if(tn is None):  
-				print 'Oops, verification failed!'  
-				continue  
-			r = A.add_m(tn)       #adding money to account  
+		  elif("complete" in cmd):  
+			  [.......]  
+			  if(len(h) != 34):  
+				  print 'Wrong verification length'  
+				  continue  
+			  tn = A.get_t()[t]     #get transaction of number t  
+			  tn = C.decrypt(tn, h) #decryption: tn - transaction, h - verification code  
+			  if(tn is None):  
+				  print 'Oops, verification failed!'  
+				  continue  
+			  r = A.add_m(tn)       #adding money to account  
 			
 we see that amount of added money to account is based on decrypted value, so let's investigate how encryption and decryption is done and check how to avoid 'verification failed'  
 
