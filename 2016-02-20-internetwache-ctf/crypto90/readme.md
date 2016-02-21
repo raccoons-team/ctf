@@ -59,7 +59,7 @@ elif("complete" in cmd):
 			
 we see that amount of added money to account is based on decrypted value, so let's investigate how encryption and decryption is done and check how to avoid 'verification failed'  
 
-        def encrypt(self, t): # t is object of class Transaction
+	  def encrypt(self, t): # t is object of class Transaction
 		self.__r.set_x(t.get_k())
 		ct = ""
 		s = str(t) #(1)
