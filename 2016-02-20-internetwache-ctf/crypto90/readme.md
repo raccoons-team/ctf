@@ -39,7 +39,7 @@ let's check how it's done in the code
 		self.__v = True  
 	[......]  
 		
-class Transaction is created after we type command 'create' and it remember the amount of money in __a  
+class Transaction is created after we type command 'create' and it remembers the amount of money in __a  
   
 below is a fragment of code from command handled  
   
@@ -64,7 +64,7 @@ we see that amount of added money to account is based on decrypted value, so let
 		l = len(s)
 		s += chr(0x09)*(17-l) #(2)
 		for c in s:
-			ct += chr( ord(c) ^ (self.__r.get_next() % 2**7) ) (3)
+			ct += chr( ord(c) ^ (self.__r.get_next() % 2**7) ) #(3)
 		return ct.encode('hex')
 
 	def decrypt(self, t, ct): # t - transaction ct - verification code
@@ -87,7 +87,7 @@ function encrypt get's a text value of object of class Transaction (1)
 adds padding 0x09 where length is too small (2)  
 and xor's this text (3)  
 
-text value of object of class Transaction looks like "TRANSACTION: 1000"  
+this text value of object looks like "TRANSACTION: 1000"  
 we can see this in below code:  
 
     class Transaction:
@@ -100,7 +100,7 @@ function decrypt is checking if transaction code is correct by checking of prese
 encrypted text looks like 'T' xor'ed with something, 'r' xor'ed with something2, 'a' xored with something3 and so on...  
 
 on the position 13 we have '1' xor x1 , 14 - '0' xor x2, 15 -'0' xor x3, 16 - '0' xor x4.  
-We can xor position 13 with '1' and after that xor with '9' and 14 with '0' and after that xor with '9' and so on  
+We can xor position 13 with '1' and after that xor with '9' and position 14 with '0' and '9' and so on  
 
 ('1' xor x1) xor '1' xor '9' = x1 xor '9'  
 
@@ -108,8 +108,7 @@ so we can change 1000 to 9999
 
 but 9999*20 is still lower than million and we can't make verification code longer  
 
-but seems like we can also change space between ':' and value to some number because only "TRANSACTION:" is removed before casting decrypted value to integer  
-so let's change space aslo to '9' using same method as above  
+but seems like we can also change space between ':' and a value to some number because only "TRANSACTION:" is removed before casting decrypted value to integer so let's change space also to '9' using same method as above  
 
 I created a code which changes verification code of value 1000 to code with value 99999  
 
