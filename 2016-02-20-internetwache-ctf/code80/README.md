@@ -57,10 +57,10 @@ def netcat(hostname, port, content):
     while 1:
         data = s.recv(1024)
         epoch = epoch_time = int(time.time())+4*60+20  #I have different time locally than server, so needed to adjust that
-     #   print "epoch_new " + str(epoch)
+	#print "epoch_new " + str(epoch)
         if data == "":
             break
-#        print str(i)+"Received:", repr(data)
+	#print str(i)+"Received:", repr(data)
         if "hash" in data:
 	  print "matched "+data.split(" ")[-1].strip()+"#"        
         
