@@ -34,7 +34,7 @@ I was thinking about this algorithm and I came to the conclusion that when we fl
 
 another words when we have a message msg and two different keys: key1 and key2  
 
-hmac(h,key1,msg) xor hmac(h,key1 with flipped bit x)  =  hmac(h,key2,msg) xor hmac(h,key2 with flipped bit x)  
+	hmac(h,key1,msg) xor hmac(h,key1 with flipped bit x)  =  hmac(h,key2,msg) xor hmac(h,key2 with flipped bit x)  
 
 this means that hmac is linear  
 
