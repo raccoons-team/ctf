@@ -1,6 +1,6 @@
 # Writeup for hmac_crc CRYPTO (5) 
 
-> Description: We're trying a new mac here at BKP---HMAC-CRC. The hmac (with our key) of "zupe zecret" is '0xa57d43a032feb286'.  What's the hmac of "BKPCTF"? https://s3.amazonaws.com/bostonkeyparty/2016/0c7433675c3c555afb77271d6a549bf5d941d2ab
+> We're trying a new mac here at BKP---HMAC-CRC. The hmac (with our key) of "zupe zecret" is '0xa57d43a032feb286'.  What's the hmac of "BKPCTF"? https://s3.amazonaws.com/bostonkeyparty/2016/0c7433675c3c555afb77271d6a549bf5d941d2ab
 
 original script can be downloaded below
 
@@ -12,24 +12,24 @@ They give us the message and sign of this message using unknown key and we are s
 code of signing function:
 
 ```python
-	CRC_POLY = to_bits(65, (2**64) + 0xeff67c77d13835f7)
-	CONST = to_bits(64, 0xabaddeadbeef1dea)
+CRC_POLY = to_bits(65, (2**64) + 0xeff67c77d13835f7)
+CONST = to_bits(64, 0xabaddeadbeef1dea)
 
-	def crc(mesg):
-	  mesg += CONST
-	  shift = 0
-	  while shift < len(mesg) - 64:
-	    if mesg[shift]:
-	      for i in range(65):
-		mesg[shift + i] ^= CRC_POLY[i]
-	    shift += 1
-	  return mesg[-64:]
+def crc(mesg):
+  mesg += CONST
+  shift = 0
+  while shift < len(mesg) - 64:
+    if mesg[shift]:
+      for i in range(65):
+	mesg[shift + i] ^= CRC_POLY[i]
+    shift += 1
+  return mesg[-64:]
 
-	INNER = to_bits(8, 0x36) * 8
-	OUTER = to_bits(8, 0x5c) * 8
+INNER = to_bits(8, 0x36) * 8
+OUTER = to_bits(8, 0x5c) * 8
 
-	def hmac(h, key, mesg):
-	  return h(xor(key, OUTER) + h(xor(key, INNER) + mesg))
+def hmac(h, key, mesg):
+  return h(xor(key, OUTER) + h(xor(key, INNER) + mesg))
 ```
 
 I was thinking about this algorithm and I came to the conclusion that when we flip one bit in key, all bits of the output depending on this bit also flip with no matter of other bits in key  
