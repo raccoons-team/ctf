@@ -4,7 +4,7 @@
 
 original script can be downloaded below
 
-![0c7433675c3c555afb77271d6a549bf5d941d2ab](0c7433675c3c555afb77271d6a549bf5d941d2ab)
+[0c7433675c3c555afb77271d6a549bf5d941d2ab](0c7433675c3c555afb77271d6a549bf5d941d2ab)
 
 We are given a hmac functions which takes hash function, message and key as input and gives sign of the message  
 They give us the message and sign of this message using unknown key and we are supposed to sign another given message using the same key  
@@ -50,7 +50,7 @@ when some bit was different I xored my key with bits I computed using gauss-jord
 
 my code is below  
 
-![crypto1.py](crypto1.py)
+[crypto1.py](crypto1.py)
 
 put to file key.txt some 8B hex digit without '0x'
 
