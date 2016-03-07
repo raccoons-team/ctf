@@ -44,7 +44,7 @@ I used gauss-jordan algorithm to compute which bits in key need to flip if I wan
 
 I created my own pair key,sign for given message and I was looking which bits are different  
 
-when some bit was different I xored my key with bits I computed using gauss-jordan  
+when some bit was different I xored my key with bits I computed using gauss-jordan and I got needed key  
 
 my code is below  
 
