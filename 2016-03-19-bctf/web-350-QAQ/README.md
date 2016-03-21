@@ -36,7 +36,7 @@ XSS successfully append code to body:
 ```
 So we could execute any unrestricted javascript code, from our external server.
 
-On first we execute [hook.js](hook.js) from BeEF source.
+On first we executed [hook.js](hook.js) from BeEF source.
 
 Hint `Secret in intranet` prompted us to scan hosts in BeEF, results was:
 
