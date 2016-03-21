@@ -1,10 +1,14 @@
 # Writeup for QAQ (WEB) (350)
 
 > Solves: 16
-web
-http://104.199.132.251:80
-hint1: What else can XSS do? Just steal cookies? Secret in intranet，hack harder guys!
-hint2: CORS headers
+> 
+> web
+> 
+> http://104.199.132.251:80
+> 
+> hint1: What else can XSS do? Just steal cookies? Secret in intranet，hack harder guys!
+> 
+> hint2: CORS headers
   
 We had a web interface:
 
