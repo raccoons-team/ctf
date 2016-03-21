@@ -19,7 +19,7 @@ After submitting form, we see a summary of submission, so we can test XSS preven
 
 ![Screenshot_2.png](Screenshot_2.png)
 
-We crafter the following xss payload: 
+We crafted the following xss payload: 
 
 ```
 <iframe onload='
