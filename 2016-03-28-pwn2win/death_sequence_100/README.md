@@ -8,7 +8,7 @@ The main difficulty of this task was that n could be even
 10^18. It is worth to mention, than we are counting positions from 1, not from zero (following task's description).
 
 Firstly we managed to write formula for our sequence:
->f(x) = 1, for x in in range [1,4] (inclusive)  
+>f(x) = 1, for x in in range <1,4> (inclusive)  
 >f(x) = 10, for x = 5   
 >f(x) = 5*f(x-1)-f(x-2)-f(x-3)-f(x-4)-f(x-5)
 
@@ -62,7 +62,7 @@ int pow(int a, int n){
 
 Unfortunately resulting numbers can still be very large, but all we want are last 9 digist, so we can calculate everything modulo.
 
-Finally, the code - it is made of two pieces, one for connecting with server and another one for calculating sequences (this approach was useful because during the contest we've tried several implementations of sequence part). Both are in python 2.7:
+Finally, the code - it is made of two pieces, one for communicating with server and another one for calculating sequences (this approach was useful because during the contest we've tried several implementations of sequence part). Both are in python 2.7:
 ```python
 #server part
 import socket
@@ -84,7 +84,6 @@ sock = ssl.wrap_socket(sock,cert_reqs=ssl.CERT_NONE)
 
 ctr=0
 while 1:
-	#time.sleep(0.1)
 	serv = sock.read();
 	print "from server: " + serv.rstrip()
 	if serv.startswith("WRONG"):
