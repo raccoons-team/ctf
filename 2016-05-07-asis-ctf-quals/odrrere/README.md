@@ -4,6 +4,7 @@ odrrere
 * **CTF:** [ASIS CTF Quals 2016](https://asis-ctf.ir/)
 * **Category:** Forensic
 * **Points:** 166
+* **Solves:** 101
 
 > > Chaos is merely order waiting to be deciphered
 >
