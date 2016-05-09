@@ -12,8 +12,8 @@ odrrere
 We are given some file. What could it possibly be?
 
 ```
-$ file odrrere.png
-odrrere.png: PNG image data, 665 x 665, 1-bit colormap, non-interlaced
+$ file odrrere
+odrrere: PNG image data, 665 x 665, 1-bit colormap, non-interlaced
 ```
 
 Oh, PNG image. Maybe we'll just try to open it?
