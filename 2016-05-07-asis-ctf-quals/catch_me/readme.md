@@ -57,18 +57,17 @@ gdb-peda$ x/8b 0x6012a8
 
 ok, I know 4 bytes should be 0xb1    0x19    0x04    0xa1
 
-next 4 bytes I can brute force
-but setting value to environment variable 'ASIS' and running this binary again and again will be too slow
+next 4 bytes I can brute force by setting value to environment variable 'ASIS' and running this binary again and again will be too slow
 
 I just copied this asm code, pasted to "__asm__()" in C and modified following things:  
 -changed jmp [adress] to jmp [label_name]  
--zeroed rax and rdx just in case  
+-zeroed on the beginning rax and rdx just in case  
 -removed useless code (printing that flag is bad)  
 -when eax = 0x954, I'm calling a function which will print the flag  
 -modified variables addresses in following way:  
 I created global variables (and function printing the flag) in my C code, and created whole program, which prints addresses of these variables (and function printing the flag)  
 when I firstly started this program it printed addresses of my variables and it crashed  
-then I pasted addresses of my variables to assembly code and my program was working. probably you will have to chenge these values  
+then I pasted addresses of my variables to assembly code and my program was working. probably you will have to change these values  
 
 here is my function after these modyfications:  
 
@@ -140,7 +139,7 @@ int check(void)
 }
 ```
 
-[here](cracker1.c) is my whole brute-forcer, note that number of potential flags is:  
+[here](cracker1.c) is my whole brute-forcer, note that the number of potential flags is:  
 
 ```
 b@eye:~/Desktop > ./cracker | wc -l
@@ -154,9 +153,9 @@ and next I will be talking about fuckup in this task I mentioned before
 I've noticed that somewhere in the code is called ptrace  
 it's anti-reversing technique [link](https://xorl.wordpress.com/2009/01/01/quick-anti-debugging-trick-for-gdb/)  
 
-and 4 first bytes in buffer 'xor_with_this' depends chenges when ptrace will return 0 (no-debugger)  
+and 4 first bytes in buffer 'xor_with_this' changes when ptrace will return 0 (no-debugger)  
 I discovered that the result of function ptrace is next passed to some_long_function  
-I patched binary to act like without debuggerpresent all the time and updated first 4 bytes in my cracker  
+I patched binary to act like without debugger present all the time and updated first 4 bytes in my buffer 'xor_with_this' in cracker.c  
 but again, I wasn't getting reasonable results, I wasn't getting any results as I remember  
 
 [here I spend a lot time thinking what is wrong]  
@@ -176,4 +175,6 @@ b@eye:~/Desktop > ./cracker | wc -l
 
 much better!  
 
-most legit string was ASIS{600d_j0b_y0u_4r3_63771n6_574r73d} and it was the flag
+most legit string was ASIS{600d_j0b_y0u_4r3_63771n6_574r73d} and it was the flag  
+
+yep, sorry for quality of my code :D but although it works  
