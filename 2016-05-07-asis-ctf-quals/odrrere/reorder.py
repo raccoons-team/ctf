@@ -17,7 +17,7 @@ def chunks(stream):
         chk_crc_raw = stream.read(4)
         chk_crc, = struct.unpack('>I', chk_crc_raw)
         calc_crc = binascii.crc32(chk_type + chk_data) & 0xffffffff
-        if chk_crc_u != calc_crc:
+        if chk_crc != calc_crc:
             print 'CRC32 mismatch :( Expected 0x%08x, got 0x%08x' % (chk_crc, calc_crc)
             exit(2)
         yield chk_type, chk_len + chk_type + chk_data + chk_crc
