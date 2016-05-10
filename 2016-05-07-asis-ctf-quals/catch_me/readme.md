@@ -158,7 +158,7 @@ I discovered that the result of function ptrace is next passed to some_long_func
 I patched binary to act like without debugger present all the time and updated first 4 bytes in my buffer 'xor_with_this' in cracker.c  
 but again, I wasn't getting reasonable results, I wasn't getting any results as I remember  
 
-[here I spend a lot time thinking what is wrong]  
+[here I spend a lot of time thinking what is wrong]  
 
 I discovered that when I withdraw my patch in binary, these first 4bytes makes 50% of flag ascii-readable, 4B from patched binary newer will be ascii-readable (it's only xor so it'not hard to conclude this)  
 
