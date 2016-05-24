@@ -1,0 +1,221 @@
+function main (.text) {
+    0x4025e7: push rbp
+    0x4025e8: rbp = rsp
+    0x4025eb: push r14
+    0x4025ed: push r13
+    0x4025ef: push r12
+    0x4025f1: push rbx
+    0x4025f2: rsp -= 64
+    0x4025f6: rax = *(fs + 40)
+    0x4025ff: *(rbp - 40) = rax
+    0x402603: eax = 0
+    0x402605: edi = 0x402a08 "Var[0]: "
+    0x40260a: eax = 0
+    0x40260f: call (.plt) printf
+    0x402614: rax = *(__TMC_END__)
+    0x40261b: rdi = rax
+    0x40261e: call (.plt) fflush
+    0x402623: rax = rbp - 96
+    0x402627: rsi = rax
+    0x40262a: edi = 0x402a11 "%d"
+    0x40262f: eax = 0
+    0x402634: call (.plt) __isoc99_scanf
+    0x402639: edi = 0x402a14 "Var[1]: "
+    0x40263e: eax = 0
+    0x402643: call (.plt) printf
+    0x402648: rax = *(__TMC_END__)
+    0x40264f: rdi = rax
+    0x402652: call (.plt) fflush
+    0x402657: rax = rbp - 96
+    0x40265b: rax += 4
+    0x40265f: rsi = rax
+    0x402662: edi = 0x402a11 "%d"
+    0x402667: eax = 0
+    0x40266c: call (.plt) __isoc99_scanf
+    0x402671: edi = 0x402a1d "Var[2]: "
+    0x402676: eax = 0
+    0x40267b: call (.plt) printf
+    0x402680: rax = *(__TMC_END__)
+    0x402687: rdi = rax
+    0x40268a: call (.plt) fflush
+    0x40268f: rax = rbp - 96
+    0x402693: rax += 8
+    0x402697: rsi = rax
+    0x40269a: edi = 0x402a11 "%d"
+    0x40269f: eax = 0
+    0x4026a4: call (.plt) __isoc99_scanf
+    0x4026a9: edi = 0x402a26 "Var[3]: "
+    0x4026ae: eax = 0
+    0x4026b3: call (.plt) printf
+    0x4026b8: rax = *(__TMC_END__)
+    0x4026bf: rdi = rax
+    0x4026c2: call (.plt) fflush
+    0x4026c7: rax = rbp - 96
+    0x4026cb: rax += 12
+    0x4026cf: rsi = rax
+    0x4026d2: edi = 0x402a11 "%d"
+    0x4026d7: eax = 0
+    0x4026dc: call (.plt) __isoc99_scanf
+    0x4026e1: edi = 0x402a2f "Var[4]: "
+    0x4026e6: eax = 0
+    0x4026eb: call (.plt) printf
+    0x4026f0: rax = *(__TMC_END__)
+    0x4026f7: rdi = rax
+    0x4026fa: call (.plt) fflush
+    0x4026ff: rax = rbp - 96
+    0x402703: rax += 16
+    0x402707: rsi = rax
+    0x40270a: edi = 0x402a11 "%d"
+    0x40270f: eax = 0
+    0x402714: call (.plt) __isoc99_scanf
+    0x402719: edi = 0x402a38 "Var[5]: "
+    0x40271e: eax = 0
+    0x402723: call (.plt) printf
+    0x402728: rax = *(__TMC_END__)
+    0x40272f: rdi = rax
+    0x402732: call (.plt) fflush
+    0x402737: rax = rbp - 96
+    0x40273b: rax += 20
+    0x40273f: rsi = rax
+    0x402742: edi = 0x402a11 "%d"
+    0x402747: eax = 0
+    0x40274c: call (.plt) __isoc99_scanf
+    0x402751: edi = 0x402a41 "Var[6]: "
+    0x402756: eax = 0
+    0x40275b: call (.plt) printf
+    0x402760: rax = *(__TMC_END__)
+    0x402767: rdi = rax
+    0x40276a: call (.plt) fflush
+    0x40276f: rax = rbp - 96
+    0x402773: rax += 24
+    0x402777: rsi = rax
+    0x40277a: edi = 0x402a11 "%d"
+    0x40277f: eax = 0
+    0x402784: call (.plt) __isoc99_scanf
+    0x402789: edi = 0x402a4a "Var[7]: "
+    0x40278e: eax = 0
+    0x402793: call (.plt) printf
+    0x402798: rax = *(__TMC_END__)
+    0x40279f: rdi = rax
+    0x4027a2: call (.plt) fflush
+    0x4027a7: rax = rbp - 96
+    0x4027ab: rax += 28
+    0x4027af: rsi = rax
+    0x4027b2: edi = 0x402a11 "%d"
+    0x4027b7: eax = 0
+    0x4027bc: call (.plt) __isoc99_scanf
+    0x4027c1: edi = 0x402a53 "Var[8]: "
+    0x4027c6: eax = 0
+    0x4027cb: call (.plt) printf
+    0x4027d0: rax = *(__TMC_END__)
+    0x4027d7: rdi = rax
+    0x4027da: call (.plt) fflush
+    0x4027df: rax = rbp - 96
+    0x4027e3: rax += 32
+    0x4027e7: rsi = rax
+    0x4027ea: edi = 0x402a11 "%d"
+    0x4027ef: eax = 0
+    0x4027f4: call (.plt) __isoc99_scanf
+    0x4027f9: edi = 0x402a5c "Var[9]: "
+    0x4027fe: eax = 0
+    0x402803: call (.plt) printf
+    0x402808: rax = *(__TMC_END__)
+    0x40280f: rdi = rax
+    0x402812: call (.plt) fflush
+    0x402817: rax = rbp - 96
+    0x40281b: rax += 36
+    0x40281f: rsi = rax
+    0x402822: edi = 0x402a11 "%d"
+    0x402827: eax = 0
+    0x40282c: call (.plt) __isoc99_scanf
+    0x402831: edi = 0x402a65 "Var[10]: "
+    0x402836: eax = 0
+    0x40283b: call (.plt) printf
+    0x402840: rax = *(__TMC_END__)
+    0x402847: rdi = rax
+    0x40284a: call (.plt) fflush
+    0x40284f: rax = rbp - 96
+    0x402853: rax += 40
+    0x402857: rsi = rax
+    0x40285a: edi = 0x402a11 "%d"
+    0x40285f: eax = 0
+    0x402864: call (.plt) __isoc99_scanf
+    0x402869: edi = 0x402a6f "Var[11]: "
+    0x40286e: eax = 0
+    0x402873: call (.plt) printf
+    0x402878: rax = *(__TMC_END__)
+    0x40287f: rdi = rax
+    0x402882: call (.plt) fflush
+    0x402887: rax = rbp - 96
+    0x40288b: rax += 44
+    0x40288f: rsi = rax
+    0x402892: edi = 0x402a11 "%d"
+    0x402897: eax = 0
+    0x40289c: call (.plt) __isoc99_scanf
+    0x4028a1: edi = 0x402a79 "Var[12]: "
+    0x4028a6: eax = 0
+    0x4028ab: call (.plt) printf
+    0x4028b0: rax = *(__TMC_END__)
+    0x4028b7: rdi = rax
+    0x4028ba: call (.plt) fflush
+    0x4028bf: rax = rbp - 96
+    0x4028c3: rax += 48
+    0x4028c7: rsi = rax
+    0x4028ca: edi = 0x402a11 "%d"
+    0x4028cf: eax = 0
+    0x4028d4: call (.plt) __isoc99_scanf
+    0x4028d9: rax = rbp - 96
+    0x4028dd: rdi = rax
+    0x4028e0: call (.text) CheckSolution
+    # 0x4028e5: test al, al
+    # 0x4028e7: je 0x402941
+    if (al != 0) {
+        0x4028e9: r12d = *(rbp - 48)
+        0x4028ed: ebx = *(rbp - 52)
+        0x4028f0: r11d = *(rbp - 56)
+        0x4028f4: r10d = *(rbp - 60)
+        0x4028f8: r9d = *(rbp - 64)
+        0x4028fc: r8d = *(rbp - 68)
+        0x402900: edi = *(rbp - 72)
+        0x402903: esi = *(rbp - 76)
+        0x402906: r14d = *(rbp - 80)
+        0x40290a: r13d = *(rbp - 84)
+        0x40290e: ecx = *(rbp - 88)
+        0x402911: edx = *(rbp - 92)
+        0x402914: eax = *(rbp - 96)
+        0x402917: push r12
+        0x402919: push rbx
+        0x40291a: push r11
+        0x40291c: push r10
+        0x40291e: push r9
+        0x402920: push r8
+        0x402922: push rdi
+        0x402923: push rsi
+        0x402924: r9d = r14d
+        0x402927: r8d = r13d
+        0x40292a: esi = eax
+        0x40292c: edi = 0x402a88 "The flag is: %c%c%c%c%c%c%c%c%..."
+        0x402931: eax = 0
+        0x402936: call (.plt) printf
+        0x40293b: rsp += 64
+        0x40293f: jmp 0x40294b
+    } else {
+        0x402941: edi = 0x402ab1 "Wrong"
+        0x402946: call (.plt) puts
+    }
+    0x40294b: eax = 0
+    0x402950: rbx = *(rbp - 40)
+    # 0x402954: xor rbx, qword ptr fs:[0x28]
+    # 0x40295d: je 0x402964
+    if ((rbx ^= *(fs + 40)) != 0) {
+        0x40295f: call (.plt) __stack_chk_fail
+    }
+    ret_0x402964:
+    0x402964: rsp = rbp - 32
+    0x402968: pop rbx
+    0x402969: pop r12
+    0x40296b: pop r13
+    0x40296d: pop r14
+    0x40296f: pop rbp
+    0x402970: ret
+}

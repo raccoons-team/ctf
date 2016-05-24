@@ -1,0 +1,1784 @@
+CheckSolution (.text) {
+    0x4006c6: push rbp
+    0x4006c7: rbp = rsp
+    0x4006ca: rsp -= 704
+    0x4006d1: *(rbp - 696) = rdi
+    0x4006d8: rax = *(fs + 40)
+    0x4006e1: *(rbp - 8) = rax
+    0x4006e5: eax = 0
+    0x4006e7: jmp 0x4006eb
+    0x4006eb: *(rbp - 688) = 37484
+    0x4006f5: eax = *(rbp - 688)
+    0x4006fb: eax ^= 1
+    0x4006fe: *(rbp - 688) = eax
+    0x400704: *(rbp - 684) = 172968
+    0x40070e: eax = *(rbp - 684)
+    0x400714: eax >>= 3
+    0x400717: *(rbp - 684) = eax
+    0x40071d: *(rbp - 680) = 14992
+    0x400727: eax = *(rbp - 680)
+    0x40072d: eax >>= 3
+    0x400730: *(rbp - 680) = eax
+    0x400736: *(rbp - 676) = 46273
+    0x400740: jmp 0x400744
+    0x400744: jmp 0x400748
+    0x400748: *(rbp - 672) = 50452
+    0x400752: eax = *(rbp - 672)
+    0x400758: al ^= -35
+    0x40075a: *(rbp - 672) = eax
+    0x400760: *(rbp - 668) = 43166
+    0x40076a: jmp 0x40076e
+    0x40076e: *(rbp - 664) = 118216
+    0x400778: eax = *(rbp - 664)
+    0x40077e: eax >>= 2
+    0x400781: *(rbp - 664) = eax
+    0x400787: *(rbp - 660) = 65552
+    0x400791: eax = *(rbp - 660)
+    0x400797: eax >>= 2
+    0x40079a: *(rbp - 660) = eax
+    0x4007a0: *(rbp - 656) = 57693
+    0x4007aa: jmp 0x4007ae
+    0x4007ae: jmp 0x4007b2
+    0x4007b2: *(rbp - 652) = 7313
+    0x4007bc: eax = *(rbp - 652)
+    0x4007c2: eax += eax
+    0x4007c4: *(rbp - 652) = eax
+    0x4007ca: jmp 0x4007ce
+    0x4007ce: *(rbp - 648) = 21068
+    0x4007d8: eax = *(rbp - 648)
+    0x4007de: eax ^= 46
+    0x4007e1: *(rbp - 648) = eax
+    0x4007e7: *(rbp - 644) = 39342
+    0x4007f1: jmp 0x4007f5
+    0x4007f5: *(rbp - 640) = 54757
+    0x4007ff: jmp 0x400803
+    0x400803: *(rbp - 636) = 814976
+    0x40080d: eax = *(rbp - 636)
+    0x400813: eax >>= 4
+    0x400816: *(rbp - 636) = eax
+    0x40081c: *(rbp - 632) = 76944
+    0x400826: eax = *(rbp - 632)
+    0x40082c: eax >>= 4
+    0x40082f: *(rbp - 632) = eax
+    0x400835: *(rbp - 628) = 6019
+    0x40083f: jmp 0x400843
+    0x400843: *(rbp - 624) = 38962
+    0x40084d: jmp 0x400851
+    0x400851: jmp 0x400855
+    0x400855: *(rbp - 620) = 7397
+    0x40085f: eax = *(rbp - 620)
+    0x400865: eax += eax
+    0x400867: *(rbp - 620) = eax
+    0x40086d: jmp 0x400871
+    0x400871: *(rbp - 616) = 22536
+    0x40087b: eax = *(rbp - 616)
+    0x400881: eax ^= 79
+    0x400884: *(rbp - 616) = eax
+    0x40088a: *(rbp - 612) = 837
+    0x400894: jmp 0x400898
+    0x400898: *(rbp - 608) = 73454
+    0x4008a2: eax = *(rbp - 608)
+    0x4008a8: eax >>= 1
+    0x4008aa: *(rbp - 608) = eax
+    0x4008b0: *(rbp - 604) = 50592
+    0x4008ba: jmp 0x4008be
+    0x4008be: *(rbp - 600) = 11829
+    0x4008c8: jmp 0x4008cc
+    0x4008cc: *(rbp - 596) = 20046
+    0x4008d6: jmp 0x4008da
+    0x4008da: *(rbp - 592) = 37024
+    0x4008e4: eax = *(rbp - 592)
+    0x4008ea: eax >>= 2
+    0x4008ed: *(rbp - 592) = eax
+    0x4008f3: jmp 0x4008f7
+    0x4008f7: *(rbp - 588) = 26614
+    0x400901: eax = *(rbp - 588)
+    0x400907: eax += eax
+    0x400909: *(rbp - 588) = eax
+    0x40090f: *(rbp - 584) = 619680
+    0x400919: eax = *(rbp - 584)
+    0x40091f: eax >>= 4
+    0x400922: *(rbp - 584) = eax
+    0x400928: *(rbp - 580) = 105886
+    0x400932: eax = *(rbp - 580)
+    0x400938: eax >>= 1
+    0x40093a: *(rbp - 580) = eax
+    0x400940: *(rbp - 576) = 135056
+    0x40094a: eax = *(rbp - 576)
+    0x400950: eax >>= 3
+    0x400953: *(rbp - 576) = eax
+    0x400959: *(rbp - 572) = 26907
+    0x400963: jmp 0x400967
+    0x400967: jmp 0x40096b
+    0x40096b: *(rbp - 568) = 22223
+    0x400975: eax = *(rbp - 568)
+    0x40097b: eax += eax
+    0x40097d: *(rbp - 568) = eax
+    0x400983: jmp 0x400987
+    0x400987: *(rbp - 564) = 18533
+    0x400991: eax = *(rbp - 564)
+    0x400997: al ^= -52
+    0x400999: *(rbp - 564) = eax
+    0x40099f: *(rbp - 560) = 65221
+    0x4009a9: jmp 0x4009ad
+    0x4009ad: jmp 0x4009b1
+    0x4009b1: *(rbp - 556) = 47431
+    0x4009bb: eax = *(rbp - 556)
+    0x4009c1: al ^= -16
+    0x4009c3: *(rbp - 556) = eax
+    0x4009c9: *(rbp - 552) = 17702
+    0x4009d3: jmp 0x4009d7
+    0x4009d7: *(rbp - 548) = 33910
+    0x4009e1: jmp 0x4009e5
+    0x4009e5: jmp 0x4009e9
+    0x4009e9: *(rbp - 544) = 21327
+    0x4009f3: eax = *(rbp - 544)
+    0x4009f9: eax += eax
+    0x4009fb: *(rbp - 544) = eax
+    0x400a01: jmp 0x400a05
+    0x400a05: *(rbp - 540) = 5222
+    0x400a0f: eax = *(rbp - 540)
+    0x400a15: al ^= -99
+    0x400a17: *(rbp - 540) = eax
+    0x400a1d: *(rbp - 536) = 11469
+    0x400a27: jmp 0x400a2b
+    0x400a2b: *(rbp - 532) = 230988
+    0x400a35: eax = *(rbp - 532)
+    0x400a3b: eax >>= 2
+    0x400a3e: *(rbp - 532) = eax
+    0x400a44: jmp 0x400a48
+    0x400a48: *(rbp - 528) = 23810
+    0x400a52: eax = *(rbp - 528)
+    0x400a58: eax ^= 83
+    0x400a5b: *(rbp - 528) = eax
+    0x400a61: *(rbp - 524) = 52032
+    0x400a6b: eax = *(rbp - 524)
+    0x400a71: eax >>= 1
+    0x400a73: *(rbp - 524) = eax
+    0x400a79: jmp 0x400a7d
+    0x400a7d: *(rbp - 520) = 12585
+    0x400a87: eax = *(rbp - 520)
+    0x400a8d: eax += eax
+    0x400a8f: *(rbp - 520) = eax
+    0x400a95: *(rbp - 516) = 54317
+    0x400a9f: jmp 0x400aa3
+    0x400aa3: *(rbp - 512) = 32337
+    0x400aad: jmp 0x400ab1
+    0x400ab1: *(rbp - 508) = 42596
+    0x400abb: eax = *(rbp - 508)
+    0x400ac1: eax >>= 2
+    0x400ac4: *(rbp - 508) = eax
+    0x400aca: jmp 0x400ace
+    0x400ace: *(rbp - 504) = 34701
+    0x400ad8: eax = *(rbp - 504)
+    0x400ade: eax ^= 120
+    0x400ae1: *(rbp - 504) = eax
+    0x400ae7: *(rbp - 500) = 146736
+    0x400af1: eax = *(rbp - 500)
+    0x400af7: eax >>= 4
+    0x400afa: *(rbp - 500) = eax
+    0x400b00: jmp 0x400b04
+    0x400b04: *(rbp - 496) = 22951
+    0x400b0e: eax = *(rbp - 496)
+    0x400b14: al ^= -32
+    0x400b16: *(rbp - 496) = eax
+    0x400b1c: *(rbp - 492) = 34484
+    0x400b26: eax = *(rbp - 492)
+    0x400b2c: eax >>= 2
+    0x400b2f: *(rbp - 492) = eax
+    0x400b35: *(rbp - 488) = 1268
+    0x400b3f: eax = *(rbp - 488)
+    0x400b45: eax >>= 1
+    0x400b47: *(rbp - 488) = eax
+    0x400b4d: jmp 0x400b51
+    0x400b51: *(rbp - 484) = 5932
+    0x400b5b: eax = *(rbp - 484)
+    0x400b61: eax += eax
+    0x400b63: *(rbp - 484) = eax
+    0x400b69: *(rbp - 480) = 14005
+    0x400b73: jmp 0x400b77
+    0x400b77: *(rbp - 476) = 16323
+    0x400b81: jmp 0x400b85
+    0x400b85: jmp 0x400b89
+    0x400b89: *(rbp - 472) = 43993
+    0x400b93: eax = *(rbp - 472)
+    0x400b99: eax ^= 101
+    0x400b9c: *(rbp - 472) = eax
+    0x400ba2: jmp 0x400ba6
+    0x400ba6: *(rbp - 468) = 17335
+    0x400bb0: eax = *(rbp - 468)
+    0x400bb6: eax += eax
+    0x400bb8: *(rbp - 468) = eax
+    0x400bbe: *(rbp - 464) = 54889
+    0x400bc8: jmp 0x400bcc
+    0x400bcc: *(rbp - 460) = 12282
+    0x400bd6: eax = *(rbp - 460)
+    0x400bdc: eax >>= 1
+    0x400bde: *(rbp - 460) = eax
+    0x400be4: jmp 0x400be8
+    0x400be8: *(rbp - 456) = 35394
+    0x400bf2: eax = *(rbp - 456)
+    0x400bf8: eax ^= 33
+    0x400bfb: *(rbp - 456) = eax
+    0x400c01: *(rbp - 452) = 61977
+    0x400c0b: jmp 0x400c0f
+    0x400c0f: jmp 0x400c13
+    0x400c13: *(rbp - 448) = 28053
+    0x400c1d: eax = *(rbp - 448)
+    0x400c23: eax ^= 115
+    0x400c26: *(rbp - 448) = eax
+    0x400c2c: jmp 0x400c30
+    0x400c30: *(rbp - 444) = 21593
+    0x400c3a: eax = *(rbp - 444)
+    0x400c40: eax += eax
+    0x400c42: *(rbp - 444) = eax
+    0x400c48: jmp 0x400c4c
+    0x400c4c: *(rbp - 440) = 29838
+    0x400c56: eax = *(rbp - 440)
+    0x400c5c: eax += eax
+    0x400c5e: *(rbp - 440) = eax
+    0x400c64: *(rbp - 436) = 31156
+    0x400c6e: eax = *(rbp - 436)
+    0x400c74: eax >>= 1
+    0x400c76: *(rbp - 436) = eax
+    0x400c7c: jmp 0x400c80
+    0x400c80: *(rbp - 432) = 25041
+    0x400c8a: eax = *(rbp - 432)
+    0x400c90: eax += eax
+    0x400c92: *(rbp - 432) = eax
+    0x400c98: *(rbp - 428) = 163040
+    0x400ca2: eax = *(rbp - 428)
+    0x400ca8: eax >>= 2
+    0x400cab: *(rbp - 428) = eax
+    0x400cb1: jmp 0x400cb5
+    0x400cb5: *(rbp - 424) = 11007
+    0x400cbf: eax = *(rbp - 424)
+    0x400cc5: eax += eax
+    0x400cc7: *(rbp - 424) = eax
+    0x400ccd: jmp 0x400cd1
+    0x400cd1: *(rbp - 420) = 6804
+    0x400cdb: eax = *(rbp - 420)
+    0x400ce1: eax += eax
+    0x400ce3: *(rbp - 420) = eax
+    0x400ce9: jmp 0x400ced
+    0x400ced: *(rbp - 416) = 5061
+    0x400cf7: eax = *(rbp - 416)
+    0x400cfd: al ^= -105
+    0x400cff: *(rbp - 416) = eax
+    0x400d05: *(rbp - 412) = 214000
+    0x400d0f: eax = *(rbp - 412)
+    0x400d15: eax >>= 3
+    0x400d18: *(rbp - 412) = eax
+    0x400d1e: *(rbp - 408) = 31708
+    0x400d28: jmp 0x400d2c
+    0x400d2c: jmp 0x400d30
+    0x400d30: *(rbp - 404) = 39583
+    0x400d3a: eax = *(rbp - 404)
+    0x400d40: eax ^= 44
+    0x400d43: *(rbp - 404) = eax
+    0x400d49: jmp 0x400d4d
+    0x400d4d: *(rbp - 400) = 13694
+    0x400d57: eax = *(rbp - 400)
+    0x400d5d: eax ^= 92
+    0x400d60: *(rbp - 400) = eax
+    0x400d66: *(rbp - 396) = 59055
+    0x400d70: jmp 0x400d74
+    0x400d74: *(rbp - 392) = 65476
+    0x400d7e: eax = *(rbp - 392)
+    0x400d84: eax >>= 1
+    0x400d86: *(rbp - 392) = eax
+    0x400d8c: jmp 0x400d90
+    0x400d90: *(rbp - 388) = 29347
+    0x400d9a: eax = *(rbp - 388)
+    0x400da0: eax ^= 62
+    0x400da3: *(rbp - 388) = eax
+    0x400da9: jmp 0x400dad
+    0x400dad: *(rbp - 384) = 10450
+    0x400db7: eax = *(rbp - 384)
+    0x400dbd: al ^= -109
+    0x400dbf: *(rbp - 384) = eax
+    0x400dc5: *(rbp - 380) = 15650
+    0x400dcf: jmp 0x400dd3
+    0x400dd3: *(rbp - 376) = 189996
+    0x400ddd: eax = *(rbp - 376)
+    0x400de3: eax >>= 2
+    0x400de6: *(rbp - 376) = eax
+    0x400dec: *(rbp - 372) = 57856
+    0x400df6: jmp 0x400dfa
+    0x400dfa: *(rbp - 368) = 13477
+    0x400e04: jmp 0x400e08
+    0x400e08: *(rbp - 364) = 20438
+    0x400e12: eax = *(rbp - 364)
+    0x400e18: eax >>= 1
+    0x400e1a: *(rbp - 364) = eax
+    0x400e20: jmp 0x400e24
+    0x400e24: *(rbp - 360) = 4930
+    0x400e2e: eax = *(rbp - 360)
+    0x400e34: al ^= -22
+    0x400e36: *(rbp - 360) = eax
+    0x400e3c: jmp 0x400e40
+    0x400e40: *(rbp - 356) = 21229
+    0x400e4a: eax = *(rbp - 356)
+    0x400e50: al ^= -62
+    0x400e52: *(rbp - 356) = eax
+    0x400e58: jmp 0x400e5c
+    0x400e5c: *(rbp - 352) = 29604
+    0x400e66: eax = *(rbp - 352)
+    0x400e6c: eax ^= 3
+    0x400e6f: *(rbp - 352) = eax
+    0x400e75: jmp 0x400e79
+    0x400e79: *(rbp - 348) = 55130
+    0x400e83: eax = *(rbp - 348)
+    0x400e89: al ^= -109
+    0x400e8b: *(rbp - 348) = eax
+    0x400e91: *(rbp - 344) = 24260
+    0x400e9b: eax = *(rbp - 344)
+    0x400ea1: eax >>= 2
+    0x400ea4: *(rbp - 344) = eax
+    0x400eaa: *(rbp - 340) = 64188
+    0x400eb4: eax = *(rbp - 340)
+    0x400eba: eax >>= 2
+    0x400ebd: *(rbp - 340) = eax
+    0x400ec3: *(rbp - 336) = 36432
+    0x400ecd: eax = *(rbp - 336)
+    0x400ed3: eax >>= 3
+    0x400ed6: *(rbp - 336) = eax
+    0x400edc: jmp 0x400ee0
+    0x400ee0: *(rbp - 332) = 1131
+    0x400eea: eax = *(rbp - 332)
+    0x400ef0: eax += eax
+    0x400ef2: *(rbp - 332) = eax
+    0x400ef8: *(rbp - 328) = 18903
+    0x400f02: jmp 0x400f06
+    0x400f06: jmp 0x400f0a
+    0x400f0a: *(rbp - 324) = 65297
+    0x400f14: eax = *(rbp - 324)
+    0x400f1a: al ^= -102
+    0x400f1c: *(rbp - 324) = eax
+    0x400f22: jmp 0x400f26
+    0x400f26: *(rbp - 320) = 17295
+    0x400f30: eax = *(rbp - 320)
+    0x400f36: al ^= -104
+    0x400f38: *(rbp - 320) = eax
+    0x400f3e: *(rbp - 316) = 18820
+    0x400f48: eax = *(rbp - 316)
+    0x400f4e: eax >>= 1
+    0x400f50: *(rbp - 316) = eax
+    0x400f56: jmp 0x400f5a
+    0x400f5a: *(rbp - 312) = 11257
+    0x400f64: eax = *(rbp - 312)
+    0x400f6a: eax += eax
+    0x400f6c: *(rbp - 312) = eax
+    0x400f72: *(rbp - 308) = 209508
+    0x400f7c: eax = *(rbp - 308)
+    0x400f82: eax >>= 2
+    0x400f85: *(rbp - 308) = eax
+    0x400f8b: *(rbp - 304) = 18470
+    0x400f95: eax = *(rbp - 304)
+    0x400f9b: eax >>= 1
+    0x400f9d: *(rbp - 304) = eax
+    0x400fa3: *(rbp - 300) = 53309
+    0x400fad: jmp 0x400fb1
+    0x400fb1: *(rbp - 296) = 383272
+    0x400fbb: eax = *(rbp - 296)
+    0x400fc1: eax >>= 3
+    0x400fc4: *(rbp - 296) = eax
+    0x400fca: *(rbp - 292) = 59111
+    0x400fd4: jmp 0x400fd8
+    0x400fd8: jmp 0x400fdc
+    0x400fdc: *(rbp - 288) = 41430
+    0x400fe6: eax = *(rbp - 288)
+    0x400fec: al ^= -97
+    0x400fee: *(rbp - 288) = eax
+    0x400ff4: jmp 0x400ff8
+    0x400ff8: *(rbp - 284) = 12211
+    0x401002: eax = *(rbp - 284)
+    0x401008: eax += eax
+    0x40100a: *(rbp - 284) = eax
+    0x401010: *(rbp - 280) = 41178
+    0x40101a: jmp 0x40101e
+    0x40101e: *(rbp - 276) = 23447
+    0x401028: jmp 0x40102c
+    0x40102c: *(rbp - 272) = 7220
+    0x401036: eax = *(rbp - 272)
+    0x40103c: eax >>= 2
+    0x40103f: *(rbp - 272) = eax
+    0x401045: jmp 0x401049
+    0x401049: *(rbp - 268) = 4350
+    0x401053: eax = *(rbp - 268)
+    0x401059: al ^= -39
+    0x40105b: *(rbp - 268) = eax
+    0x401061: jmp 0x401065
+    0x401065: *(rbp - 264) = 8450
+    0x40106f: eax = *(rbp - 264)
+    0x401075: eax += eax
+    0x401077: *(rbp - 264) = eax
+    0x40107d: jmp 0x401081
+    0x401081: *(rbp - 260) = 33371
+    0x40108b: eax = *(rbp - 260)
+    0x401091: eax ^= 62
+    0x401094: *(rbp - 260) = eax
+    0x40109a: *(rbp - 256) = 187068
+    0x4010a4: eax = *(rbp - 256)
+    0x4010aa: eax >>= 2
+    0x4010ad: *(rbp - 256) = eax
+    0x4010b3: *(rbp - 252) = 58551
+    0x4010bd: jmp 0x4010c1
+    0x4010c1: *(rbp - 248) = 34118
+    0x4010cb: jmp 0x4010cf
+    0x4010cf: jmp 0x4010d3
+    0x4010d3: *(rbp - 244) = 44865
+    0x4010dd: eax = *(rbp - 244)
+    0x4010e3: eax ^= 57
+    0x4010e6: *(rbp - 244) = eax
+    0x4010ec: *(rbp - 240) = 11933
+    0x4010f6: jmp 0x4010fa
+    0x4010fa: *(rbp - 236) = 82120
+    0x401104: eax = *(rbp - 236)
+    0x40110a: eax >>= 2
+    0x40110d: *(rbp - 236) = eax
+    0x401113: *(rbp - 232) = 125592
+    0x40111d: eax = *(rbp - 232)
+    0x401123: eax >>= 3
+    0x401126: *(rbp - 232) = eax
+    0x40112c: jmp 0x401130
+    0x401130: *(rbp - 228) = 36459
+    0x40113a: eax = *(rbp - 228)
+    0x401140: al ^= -98
+    0x401142: *(rbp - 228) = eax
+    0x401148: *(rbp - 224) = 18231
+    0x401152: jmp 0x401156
+    0x401156: jmp 0x40115a
+    0x40115a: *(rbp - 220) = 42924
+    0x401164: eax = *(rbp - 220)
+    0x40116a: eax ^= 17
+    0x40116d: *(rbp - 220) = eax
+    0x401173: *(rbp - 216) = 61056
+    0x40117d: jmp 0x401181
+    0x401181: *(rbp - 212) = 45169
+    0x40118b: jmp 0x40118f
+    0x40118f: jmp 0x401193
+    0x401193: *(rbp - 208) = 20642
+    0x40119d: eax = *(rbp - 208)
+    0x4011a3: eax += eax
+    0x4011a5: *(rbp - 208) = eax
+    0x4011ab: jmp 0x4011af
+    0x4011af: *(rbp - 204) = 861
+    0x4011b9: eax = *(rbp - 204)
+    0x4011bf: eax += eax
+    0x4011c1: *(rbp - 204) = eax
+    0x4011c7: jmp 0x4011cb
+    0x4011cb: *(rbp - 200) = 26574
+    0x4011d5: eax = *(rbp - 200)
+    0x4011db: al ^= -7
+    0x4011dd: *(rbp - 200) = eax
+    0x4011e3: jmp 0x4011e7
+    0x4011e7: *(rbp - 196) = 47043
+    0x4011f1: eax = *(rbp - 196)
+    0x4011f7: eax ^= 15
+    0x4011fa: *(rbp - 196) = eax
+    0x401200: *(rbp - 192) = 42363
+    0x40120a: jmp 0x40120e
+    0x40120e: *(rbp - 188) = 120264
+    0x401218: eax = *(rbp - 188)
+    0x40121e: eax >>= 3
+    0x401221: *(rbp - 188) = eax
+    0x401227: jmp 0x40122b
+    0x40122b: *(rbp - 184) = 19101
+    0x401235: eax = *(rbp - 184)
+    0x40123b: al ^= -126
+    0x40123d: *(rbp - 184) = eax
+    0x401243: *(rbp - 180) = 10788
+    0x40124d: jmp 0x401251
+    0x401251: jmp 0x401255
+    0x401255: *(rbp - 176) = 33422
+    0x40125f: eax = *(rbp - 176)
+    0x401265: al ^= -87
+    0x401267: *(rbp - 176) = eax
+    0x40126d: *(rbp - 172) = 63680
+    0x401277: jmp 0x40127b
+    0x40127b: *(rbp - 168) = 148340
+    0x401285: eax = *(rbp - 168)
+    0x40128b: eax >>= 2
+    0x40128e: *(rbp - 168) = eax
+    0x401294: jmp 0x401298
+    0x401298: *(rbp - 164) = 51549
+    0x4012a2: eax = *(rbp - 164)
+    0x4012a8: al ^= -37
+    0x4012aa: *(rbp - 164) = eax
+    0x4012b0: jmp 0x4012b4
+    0x4012b4: *(rbp - 160) = 8899
+    0x4012be: eax = *(rbp - 160)
+    0x4012c4: eax += eax
+    0x4012c6: *(rbp - 160) = eax
+    0x4012cc: jmp 0x4012d0
+    0x4012d0: *(rbp - 156) = 10102
+    0x4012da: eax = *(rbp - 156)
+    0x4012e0: al ^= -7
+    0x4012e2: *(rbp - 156) = eax
+    0x4012e8: *(rbp - 152) = 104776
+    0x4012f2: eax = *(rbp - 152)
+    0x4012f8: eax >>= 1
+    0x4012fa: *(rbp - 152) = eax
+    0x401300: jmp 0x401304
+    0x401304: *(rbp - 148) = 6373
+    0x40130e: eax = *(rbp - 148)
+    0x401314: eax += eax
+    0x401316: *(rbp - 148) = eax
+    0x40131c: *(rbp - 144) = 12587
+    0x401326: jmp 0x40132a
+    0x40132a: jmp 0x40132e
+    0x40132e: *(rbp - 140) = 29393
+    0x401338: eax = *(rbp - 140)
+    0x40133e: eax += eax
+    0x401340: *(rbp - 140) = eax
+    0x401346: *(rbp - 136) = 66152
+    0x401350: eax = *(rbp - 136)
+    0x401356: eax >>= 3
+    0x401359: *(rbp - 136) = eax
+    0x40135f: *(rbp - 132) = 45226
+    0x401369: eax = *(rbp - 132)
+    0x40136f: eax >>= 1
+    0x401371: *(rbp - 132) = eax
+    0x401377: jmp 0x40137b
+    0x40137b: *(rbp - 128) = 30792
+    0x401382: eax = *(rbp - 128)
+    0x401385: eax ^= 105
+    0x401388: *(rbp - 128) = eax
+    0x40138b: jmp 0x40138f
+    0x40138f: *(rbp - 124) = 20863
+    0x401396: eax = *(rbp - 124)
+    0x401399: eax ^= 10
+    0x40139c: *(rbp - 124) = eax
+    0x40139f: jmp 0x4013a3
+    0x4013a3: *(rbp - 120) = 32165
+    0x4013aa: eax = *(rbp - 120)
+    0x4013ad: eax ^= 125
+    0x4013b0: *(rbp - 120) = eax
+    0x4013b3: jmp 0x4013b7
+    0x4013b7: *(rbp - 116) = 36806
+    0x4013be: eax = *(rbp - 116)
+    0x4013c1: al ^= -20
+    0x4013c3: *(rbp - 116) = eax
+    0x4013c6: jmp 0x4013ca
+    0x4013ca: *(rbp - 112) = 47376
+    0x4013d1: eax = *(rbp - 112)
+    0x4013d4: al ^= -34
+    0x4013d6: *(rbp - 112) = eax
+    0x4013d9: *(rbp - 108) = 33282
+    0x4013e0: jmp 0x4013e4
+    0x4013e4: *(rbp - 104) = 946880
+    0x4013eb: eax = *(rbp - 104)
+    0x4013ee: eax >>= 4
+    0x4013f1: *(rbp - 104) = eax
+    0x4013f4: jmp 0x4013f8
+    0x4013f8: *(rbp - 100) = 65118
+    0x4013ff: eax = *(rbp - 100)
+    0x401402: al ^= -14
+    0x401404: *(rbp - 100) = eax
+    0x401407: jmp 0x40140b
+    0x40140b: *(rbp - 96) = 9455
+    0x401412: eax = *(rbp - 96)
+    0x401415: al ^= -29
+    0x401417: *(rbp - 96) = eax
+    0x40141a: jmp 0x40141e
+    0x40141e: *(rbp - 92) = 59505
+    0x401425: eax = *(rbp - 92)
+    0x401428: al ^= -66
+    0x40142a: *(rbp - 92) = eax
+    0x40142d: jmp 0x401431
+    0x401431: *(rbp - 88) = 62801
+    0x401438: eax = *(rbp - 88)
+    0x40143b: al ^= -7
+    0x40143d: *(rbp - 88) = eax
+    0x401440: *(rbp - 84) = 389752
+    0x401447: eax = *(rbp - 84)
+    0x40144a: eax >>= 3
+    0x40144d: *(rbp - 84) = eax
+    0x401450: jmp 0x401454
+    0x401454: *(rbp - 80) = 23674
+    0x40145b: eax = *(rbp - 80)
+    0x40145e: eax += eax
+    0x401460: *(rbp - 80) = eax
+    0x401463: jmp 0x401467
+    0x401467: *(rbp - 76) = 18796
+    0x40146e: eax = *(rbp - 76)
+    0x401471: eax += eax
+    0x401473: *(rbp - 76) = eax
+    0x401476: jmp 0x40147a
+    0x40147a: *(rbp - 72) = 28806
+    0x401481: eax = *(rbp - 72)
+    0x401484: eax += eax
+    0x401486: *(rbp - 72) = eax
+    0x401489: *(rbp - 68) = 40510
+    0x401490: jmp 0x401494
+    0x401494: jmp 0x401498
+    0x401498: *(rbp - 64) = 51817
+    0x40149f: eax = *(rbp - 64)
+    0x4014a2: eax ^= 126
+    0x4014a5: *(rbp - 64) = eax
+    0x4014a8: *(rbp - 60) = 35879
+    0x4014af: jmp 0x4014b3
+    0x4014b3: *(rbp - 56) = 63890
+    0x4014ba: jmp 0x4014be
+    0x4014be: jmp 0x4014c2
+    0x4014c2: *(rbp - 52) = 4126
+    0x4014c9: eax = *(rbp - 52)
+    0x4014cc: eax ^= 24
+    0x4014cf: *(rbp - 52) = eax
+    0x4014d2: *(rbp - 48) = 59511
+    0x4014d9: jmp 0x4014dd
+    0x4014dd: *(rbp - 44) = 21386
+    0x4014e4: jmp 0x4014e8
+    0x4014e8: jmp 0x4014ec
+    0x4014ec: *(rbp - 40) = 20866
+    0x4014f3: eax = *(rbp - 40)
+    0x4014f6: al ^= -93
+    0x4014f8: *(rbp - 40) = eax
+    0x4014fb: *(rbp - 36) = 53034
+    0x401502: eax = *(rbp - 36)
+    0x401505: eax >>= 1
+    0x401507: *(rbp - 36) = eax
+    0x40150a: *(rbp - 32) = 112612
+    0x401511: eax = *(rbp - 32)
+    0x401514: eax >>= 2
+    0x401517: *(rbp - 32) = eax
+    0x40151a: *(rbp - 28) = 404032
+    0x401521: eax = *(rbp - 28)
+    0x401524: eax >>= 4
+    0x401527: *(rbp - 28) = eax
+    0x40152a: *(rbp - 24) = 43789
+    0x401531: jmp 0x401535
+    0x401535: *(rbp - 20) = 51266
+    0x40153c: eax = *(rbp - 20)
+    0x40153f: eax >>= 1
+    0x401541: *(rbp - 20) = eax
+    0x401544: jmp 0x401548
+    0x401548: *(rbp - 16) = 7301
+    0x40154f: eax = *(rbp - 16)
+    0x401552: eax ^= 23
+    0x401555: *(rbp - 16) = eax
+    0x401558: edx = *(rbp - 688)
+    0x40155e: rax = *(rbp - 696)
+    0x401565: eax = *(rax)
+    0x401567: edx *= eax
+    0x40156a: ecx = *(rbp - 684)
+    0x401570: rax = *(rbp - 696)
+    0x401577: rax += 4
+    0x40157b: eax = *(rax)
+    0x40157d: eax *= ecx
+    0x401580: ecx = edx
+    0x401582: ecx -= eax
+    0x401584: edx = *(rbp - 680)
+    0x40158a: rax = *(rbp - 696)
+    0x401591: rax += 8
+    0x401595: eax = *(rax)
+    0x401597: eax *= edx
+    0x40159a: ecx -= eax
+    0x40159c: edx = *(rbp - 676)
+    0x4015a2: rax = *(rbp - 696)
+    0x4015a9: rax += 12
+    0x4015ad: eax = *(rax)
+    0x4015af: eax *= edx
+    0x4015b2: ecx -= eax
+    0x4015b4: edx = *(rbp - 672)
+    0x4015ba: rax = *(rbp - 696)
+    0x4015c1: rax += 16
+    0x4015c5: eax = *(rax)
+    0x4015c7: eax *= edx
+    0x4015ca: ecx += eax
+    0x4015cc: edx = *(rbp - 668)
+    0x4015d2: rax = *(rbp - 696)
+    0x4015d9: rax += 20
+    0x4015dd: eax = *(rax)
+    0x4015df: eax *= edx
+    0x4015e2: ecx += eax
+    0x4015e4: edx = *(rbp - 664)
+    0x4015ea: rax = *(rbp - 696)
+    0x4015f1: rax += 24
+    0x4015f5: eax = *(rax)
+    0x4015f7: eax *= edx
+    0x4015fa: ecx += eax
+    0x4015fc: edx = *(rbp - 660)
+    0x401602: rax = *(rbp - 696)
+    0x401609: rax += 28
+    0x40160d: eax = *(rax)
+    0x40160f: eax *= edx
+    0x401612: ecx += eax
+    0x401614: edx = *(rbp - 656)
+    0x40161a: rax = *(rbp - 696)
+    0x401621: rax += 32
+    0x401625: eax = *(rax)
+    0x401627: eax *= edx
+    0x40162a: ecx += eax
+    0x40162c: edx = *(rbp - 652)
+    0x401632: rax = *(rbp - 696)
+    0x401639: rax += 36
+    0x40163d: eax = *(rax)
+    0x40163f: eax *= edx
+    0x401642: ecx += eax
+    0x401644: edx = *(rbp - 648)
+    0x40164a: rax = *(rbp - 696)
+    0x401651: rax += 40
+    0x401655: eax = *(rax)
+    0x401657: eax *= edx
+    0x40165a: ecx += eax
+    0x40165c: edx = *(rbp - 644)
+    0x401662: rax = *(rbp - 696)
+    0x401669: rax += 44
+    0x40166d: eax = *(rax)
+    0x40166f: eax *= edx
+    0x401672: ecx += eax
+    0x401674: edx = *(rbp - 640)
+    0x40167a: rax = *(rbp - 696)
+    0x401681: rax += 48
+    0x401685: eax = *(rax)
+    0x401687: eax *= edx
+    0x40168a: eax += ecx
+    # 0x40168c: cmp eax, 0x1468753
+    # 0x401691: je 0x4016a1
+    if (eax != 21399379) {
+        0x401693: jmp 0x401697
+        0x401697: eax = 0
+        0x40169c: jmp 0x4025d1
+    } else {
+        0x4016a1: edx = *(rbp - 636)
+        0x4016a7: rax = *(rbp - 696)
+        0x4016ae: eax = *(rax)
+        0x4016b0: edx *= eax
+        0x4016b3: ecx = *(rbp - 632)
+        0x4016b9: rax = *(rbp - 696)
+        0x4016c0: rax += 4
+        0x4016c4: eax = *(rax)
+        0x4016c6: eax *= ecx
+        0x4016c9: ecx = rdx + rax
+        0x4016cc: edx = *(rbp - 628)
+        0x4016d2: rax = *(rbp - 696)
+        0x4016d9: rax += 8
+        0x4016dd: eax = *(rax)
+        0x4016df: eax *= edx
+        0x4016e2: ecx -= eax
+        0x4016e4: edx = *(rbp - 624)
+        0x4016ea: rax = *(rbp - 696)
+        0x4016f1: rax += 12
+        0x4016f5: eax = *(rax)
+        0x4016f7: eax *= edx
+        0x4016fa: ecx += eax
+        0x4016fc: edx = *(rbp - 620)
+        0x401702: rax = *(rbp - 696)
+        0x401709: rax += 16
+        0x40170d: eax = *(rax)
+        0x40170f: eax *= edx
+        0x401712: ecx += eax
+        0x401714: edx = *(rbp - 616)
+        0x40171a: rax = *(rbp - 696)
+        0x401721: rax += 20
+        0x401725: eax = *(rax)
+        0x401727: eax *= edx
+        0x40172a: ecx += eax
+        0x40172c: edx = *(rbp - 612)
+        0x401732: rax = *(rbp - 696)
+        0x401739: rax += 24
+        0x40173d: eax = *(rax)
+        0x40173f: eax *= edx
+        0x401742: ecx -= eax
+        0x401744: edx = *(rbp - 608)
+        0x40174a: rax = *(rbp - 696)
+        0x401751: rax += 28
+        0x401755: eax = *(rax)
+        0x401757: eax *= edx
+        0x40175a: ecx -= eax
+        0x40175c: edx = *(rbp - 604)
+        0x401762: rax = *(rbp - 696)
+        0x401769: rax += 32
+        0x40176d: eax = *(rax)
+        0x40176f: eax *= edx
+        0x401772: ecx -= eax
+        0x401774: edx = *(rbp - 600)
+        0x40177a: rax = *(rbp - 696)
+        0x401781: rax += 36
+        0x401785: eax = *(rax)
+        0x401787: eax *= edx
+        0x40178a: ecx -= eax
+        0x40178c: edx = *(rbp - 596)
+        0x401792: rax = *(rbp - 696)
+        0x401799: rax += 40
+        0x40179d: eax = *(rax)
+        0x40179f: eax *= edx
+        0x4017a2: ecx -= eax
+        0x4017a4: edx = *(rbp - 592)
+        0x4017aa: rax = *(rbp - 696)
+        0x4017b1: rax += 44
+        0x4017b5: eax = *(rax)
+        0x4017b7: eax *= edx
+        0x4017ba: ecx -= eax
+        0x4017bc: edx = *(rbp - 588)
+        0x4017c2: rax = *(rbp - 696)
+        0x4017c9: rax += 48
+        0x4017cd: eax = *(rax)
+        0x4017cf: eax *= edx
+        0x4017d2: eax += ecx
+        # 0x4017d4: cmp eax, 0x162f30
+        # 0x4017d9: je 0x4017e9
+        if (eax != 1453872) {
+            0x4017db: jmp 0x4017df
+            0x4017df: eax = 0
+            0x4017e4: jmp 0x4025d1
+        } else {
+            0x4017e9: eax = *(rbp - 584)
+            0x4017ef: neg eax
+            0x4017f1: edx = eax
+            0x4017f3: rax = *(rbp - 696)
+            0x4017fa: eax = *(rax)
+            0x4017fc: edx *= eax
+            0x4017ff: ecx = *(rbp - 580)
+            0x401805: rax = *(rbp - 696)
+            0x40180c: rax += 4
+            0x401810: eax = *(rax)
+            0x401812: eax *= ecx
+            0x401815: ecx = rdx + rax
+            0x401818: edx = *(rbp - 576)
+            0x40181e: rax = *(rbp - 696)
+            0x401825: rax += 8
+            0x401829: eax = *(rax)
+            0x40182b: eax *= edx
+            0x40182e: ecx -= eax
+            0x401830: edx = *(rbp - 572)
+            0x401836: rax = *(rbp - 696)
+            0x40183d: rax += 12
+            0x401841: eax = *(rax)
+            0x401843: eax *= edx
+            0x401846: ecx += eax
+            0x401848: edx = *(rbp - 568)
+            0x40184e: rax = *(rbp - 696)
+            0x401855: rax += 16
+            0x401859: eax = *(rax)
+            0x40185b: eax *= edx
+            0x40185e: ecx -= eax
+            0x401860: edx = *(rbp - 564)
+            0x401866: rax = *(rbp - 696)
+            0x40186d: rax += 20
+            0x401871: eax = *(rax)
+            0x401873: eax *= edx
+            0x401876: ecx -= eax
+            0x401878: edx = *(rbp - 560)
+            0x40187e: rax = *(rbp - 696)
+            0x401885: rax += 24
+            0x401889: eax = *(rax)
+            0x40188b: eax *= edx
+            0x40188e: ecx -= eax
+            0x401890: edx = *(rbp - 556)
+            0x401896: rax = *(rbp - 696)
+            0x40189d: rax += 28
+            0x4018a1: eax = *(rax)
+            0x4018a3: eax *= edx
+            0x4018a6: ecx -= eax
+            0x4018a8: edx = *(rbp - 552)
+            0x4018ae: rax = *(rbp - 696)
+            0x4018b5: rax += 32
+            0x4018b9: eax = *(rax)
+            0x4018bb: eax *= edx
+            0x4018be: ecx += eax
+            0x4018c0: edx = *(rbp - 548)
+            0x4018c6: rax = *(rbp - 696)
+            0x4018cd: rax += 36
+            0x4018d1: eax = *(rax)
+            0x4018d3: eax *= edx
+            0x4018d6: ecx -= eax
+            0x4018d8: edx = *(rbp - 544)
+            0x4018de: rax = *(rbp - 696)
+            0x4018e5: rax += 40
+            0x4018e9: eax = *(rax)
+            0x4018eb: eax *= edx
+            0x4018ee: ecx += eax
+            0x4018f0: edx = *(rbp - 540)
+            0x4018f6: rax = *(rbp - 696)
+            0x4018fd: rax += 44
+            0x401901: eax = *(rax)
+            0x401903: eax *= edx
+            0x401906: ecx += eax
+            0x401908: edx = *(rbp - 536)
+            0x40190e: rax = *(rbp - 696)
+            0x401915: rax += 48
+            0x401919: eax = *(rax)
+            0x40191b: eax *= edx
+            0x40191e: eax += ecx
+            # 0x401920: cmp eax, 0xffb2939c
+            # 0x401925: je 0x401935
+            if (eax != 4289893276) {
+                0x401927: jmp 0x40192b
+                0x40192b: eax = 0
+                0x401930: jmp 0x4025d1
+            } else {
+                0x401935: edx = *(rbp - 532)
+                0x40193b: rax = *(rbp - 696)
+                0x401942: eax = *(rax)
+                0x401944: edx *= eax
+                0x401947: ecx = *(rbp - 528)
+                0x40194d: rax = *(rbp - 696)
+                0x401954: rax += 4
+                0x401958: eax = *(rax)
+                0x40195a: eax *= ecx
+                0x40195d: ecx = edx
+                0x40195f: ecx -= eax
+                0x401961: edx = *(rbp - 524)
+                0x401967: rax = *(rbp - 696)
+                0x40196e: rax += 8
+                0x401972: eax = *(rax)
+                0x401974: eax *= edx
+                0x401977: ecx -= eax
+                0x401979: edx = *(rbp - 520)
+                0x40197f: rax = *(rbp - 696)
+                0x401986: rax += 12
+                0x40198a: eax = *(rax)
+                0x40198c: eax *= edx
+                0x40198f: ecx -= eax
+                0x401991: edx = *(rbp - 516)
+                0x401997: rax = *(rbp - 696)
+                0x40199e: rax += 16
+                0x4019a2: eax = *(rax)
+                0x4019a4: eax *= edx
+                0x4019a7: ecx += eax
+                0x4019a9: edx = *(rbp - 512)
+                0x4019af: rax = *(rbp - 696)
+                0x4019b6: rax += 20
+                0x4019ba: eax = *(rax)
+                0x4019bc: eax *= edx
+                0x4019bf: ecx -= eax
+                0x4019c1: edx = *(rbp - 508)
+                0x4019c7: rax = *(rbp - 696)
+                0x4019ce: rax += 24
+                0x4019d2: eax = *(rax)
+                0x4019d4: eax *= edx
+                0x4019d7: ecx += eax
+                0x4019d9: edx = *(rbp - 504)
+                0x4019df: rax = *(rbp - 696)
+                0x4019e6: rax += 28
+                0x4019ea: eax = *(rax)
+                0x4019ec: eax *= edx
+                0x4019ef: ecx += eax
+                0x4019f1: edx = *(rbp - 500)
+                0x4019f7: rax = *(rbp - 696)
+                0x4019fe: rax += 32
+                0x401a02: eax = *(rax)
+                0x401a04: eax *= edx
+                0x401a07: ecx -= eax
+                0x401a09: edx = *(rbp - 496)
+                0x401a0f: rax = *(rbp - 696)
+                0x401a16: rax += 36
+                0x401a1a: eax = *(rax)
+                0x401a1c: eax *= edx
+                0x401a1f: ecx -= eax
+                0x401a21: edx = *(rbp - 492)
+                0x401a27: rax = *(rbp - 696)
+                0x401a2e: rax += 40
+                0x401a32: eax = *(rax)
+                0x401a34: eax *= edx
+                0x401a37: ecx += eax
+                0x401a39: edx = *(rbp - 488)
+                0x401a3f: rax = *(rbp - 696)
+                0x401a46: rax += 44
+                0x401a4a: eax = *(rax)
+                0x401a4c: eax *= edx
+                0x401a4f: ecx -= eax
+                0x401a51: edx = *(rbp - 484)
+                0x401a57: rax = *(rbp - 696)
+                0x401a5e: rax += 48
+                0x401a62: eax = *(rax)
+                0x401a64: eax *= edx
+                0x401a67: ecx -= eax
+                0x401a69: eax = ecx
+                # 0x401a6b: cmp eax, 0xffac90e3
+                # 0x401a70: je 0x401a80
+                if (eax != 4289499363) {
+                    0x401a72: jmp 0x401a76
+                    0x401a76: eax = 0
+                    0x401a7b: jmp 0x4025d1
+                } else {
+                    0x401a80: eax = *(rbp - 480)
+                    0x401a86: neg eax
+                    0x401a88: edx = eax
+                    0x401a8a: rax = *(rbp - 696)
+                    0x401a91: eax = *(rax)
+                    0x401a93: edx *= eax
+                    0x401a96: ecx = *(rbp - 476)
+                    0x401a9c: rax = *(rbp - 696)
+                    0x401aa3: rax += 4
+                    0x401aa7: eax = *(rax)
+                    0x401aa9: eax *= ecx
+                    0x401aac: ecx = rdx + rax
+                    0x401aaf: edx = *(rbp - 472)
+                    0x401ab5: rax = *(rbp - 696)
+                    0x401abc: rax += 8
+                    0x401ac0: eax = *(rax)
+                    0x401ac2: eax *= edx
+                    0x401ac5: ecx += eax
+                    0x401ac7: edx = *(rbp - 468)
+                    0x401acd: rax = *(rbp - 696)
+                    0x401ad4: rax += 12
+                    0x401ad8: eax = *(rax)
+                    0x401ada: eax *= edx
+                    0x401add: ecx += eax
+                    0x401adf: edx = *(rbp - 464)
+                    0x401ae5: rax = *(rbp - 696)
+                    0x401aec: rax += 16
+                    0x401af0: eax = *(rax)
+                    0x401af2: eax *= edx
+                    0x401af5: ecx += eax
+                    0x401af7: edx = *(rbp - 460)
+                    0x401afd: rax = *(rbp - 696)
+                    0x401b04: rax += 20
+                    0x401b08: eax = *(rax)
+                    0x401b0a: eax *= edx
+                    0x401b0d: ecx -= eax
+                    0x401b0f: edx = *(rbp - 456)
+                    0x401b15: rax = *(rbp - 696)
+                    0x401b1c: rax += 24
+                    0x401b20: eax = *(rax)
+                    0x401b22: eax *= edx
+                    0x401b25: ecx -= eax
+                    0x401b27: edx = *(rbp - 452)
+                    0x401b2d: rax = *(rbp - 696)
+                    0x401b34: rax += 28
+                    0x401b38: eax = *(rax)
+                    0x401b3a: eax *= edx
+                    0x401b3d: ecx -= eax
+                    0x401b3f: edx = *(rbp - 448)
+                    0x401b45: rax = *(rbp - 696)
+                    0x401b4c: rax += 32
+                    0x401b50: eax = *(rax)
+                    0x401b52: eax *= edx
+                    0x401b55: ecx += eax
+                    0x401b57: edx = *(rbp - 444)
+                    0x401b5d: rax = *(rbp - 696)
+                    0x401b64: rax += 36
+                    0x401b68: eax = *(rax)
+                    0x401b6a: eax *= edx
+                    0x401b6d: ecx += eax
+                    0x401b6f: edx = *(rbp - 440)
+                    0x401b75: rax = *(rbp - 696)
+                    0x401b7c: rax += 40
+                    0x401b80: eax = *(rax)
+                    0x401b82: eax *= edx
+                    0x401b85: ecx -= eax
+                    0x401b87: edx = *(rbp - 436)
+                    0x401b8d: rax = *(rbp - 696)
+                    0x401b94: rax += 44
+                    0x401b98: eax = *(rax)
+                    0x401b9a: eax *= edx
+                    0x401b9d: ecx += eax
+                    0x401b9f: edx = *(rbp - 432)
+                    0x401ba5: rax = *(rbp - 696)
+                    0x401bac: rax += 48
+                    0x401bb0: eax = *(rax)
+                    0x401bb2: eax *= edx
+                    0x401bb5: eax += ecx
+                    # 0x401bb7: cmp eax, 0x76d288
+                    # 0x401bbc: je 0x401bcc
+                    if (eax != 7787144) {
+                        0x401bbe: jmp 0x401bc2
+                        0x401bc2: eax = 0
+                        0x401bc7: jmp 0x4025d1
+                    } else {
+                        0x401bcc: eax = *(rbp - 428)
+                        0x401bd2: neg eax
+                        0x401bd4: edx = eax
+                        0x401bd6: rax = *(rbp - 696)
+                        0x401bdd: eax = *(rax)
+                        0x401bdf: edx *= eax
+                        0x401be2: ecx = *(rbp - 424)
+                        0x401be8: rax = *(rbp - 696)
+                        0x401bef: rax += 4
+                        0x401bf3: eax = *(rax)
+                        0x401bf5: eax *= ecx
+                        0x401bf8: ecx = edx
+                        0x401bfa: ecx -= eax
+                        0x401bfc: edx = *(rbp - 420)
+                        0x401c02: rax = *(rbp - 696)
+                        0x401c09: rax += 8
+                        0x401c0d: eax = *(rax)
+                        0x401c0f: eax *= edx
+                        0x401c12: ecx += eax
+                        0x401c14: edx = *(rbp - 416)
+                        0x401c1a: rax = *(rbp - 696)
+                        0x401c21: rax += 12
+                        0x401c25: eax = *(rax)
+                        0x401c27: eax *= edx
+                        0x401c2a: ecx -= eax
+                        0x401c2c: edx = *(rbp - 412)
+                        0x401c32: rax = *(rbp - 696)
+                        0x401c39: rax += 16
+                        0x401c3d: eax = *(rax)
+                        0x401c3f: eax *= edx
+                        0x401c42: ecx -= eax
+                        0x401c44: edx = *(rbp - 408)
+                        0x401c4a: rax = *(rbp - 696)
+                        0x401c51: rax += 20
+                        0x401c55: eax = *(rax)
+                        0x401c57: eax *= edx
+                        0x401c5a: ecx -= eax
+                        0x401c5c: edx = *(rbp - 404)
+                        0x401c62: rax = *(rbp - 696)
+                        0x401c69: rax += 24
+                        0x401c6d: eax = *(rax)
+                        0x401c6f: eax *= edx
+                        0x401c72: ecx += eax
+                        0x401c74: edx = *(rbp - 400)
+                        0x401c7a: rax = *(rbp - 696)
+                        0x401c81: rax += 28
+                        0x401c85: eax = *(rax)
+                        0x401c87: eax *= edx
+                        0x401c8a: ecx += eax
+                        0x401c8c: edx = *(rbp - 396)
+                        0x401c92: rax = *(rbp - 696)
+                        0x401c99: rax += 32
+                        0x401c9d: eax = *(rax)
+                        0x401c9f: eax *= edx
+                        0x401ca2: ecx -= eax
+                        0x401ca4: edx = *(rbp - 392)
+                        0x401caa: rax = *(rbp - 696)
+                        0x401cb1: rax += 36
+                        0x401cb5: eax = *(rax)
+                        0x401cb7: eax *= edx
+                        0x401cba: ecx -= eax
+                        0x401cbc: edx = *(rbp - 388)
+                        0x401cc2: rax = *(rbp - 696)
+                        0x401cc9: rax += 40
+                        0x401ccd: eax = *(rax)
+                        0x401ccf: eax *= edx
+                        0x401cd2: ecx += eax
+                        0x401cd4: edx = *(rbp - 384)
+                        0x401cda: rax = *(rbp - 696)
+                        0x401ce1: rax += 44
+                        0x401ce5: eax = *(rax)
+                        0x401ce7: eax *= edx
+                        0x401cea: ecx += eax
+                        0x401cec: edx = *(rbp - 380)
+                        0x401cf2: rax = *(rbp - 696)
+                        0x401cf9: rax += 48
+                        0x401cfd: eax = *(rax)
+                        0x401cff: eax *= edx
+                        0x401d02: ecx -= eax
+                        0x401d04: eax = ecx
+                        # 0x401d06: cmp eax, 0xff78bf99
+                        # 0x401d0b: je 0x401d1b
+                        if (eax != 4286103449) {
+                            0x401d0d: jmp 0x401d11
+                            0x401d11: eax = 0
+                            0x401d16: jmp 0x4025d1
+                        } else {
+                            0x401d1b: eax = *(rbp - 376)
+                            0x401d21: neg eax
+                            0x401d23: edx = eax
+                            0x401d25: rax = *(rbp - 696)
+                            0x401d2c: eax = *(rax)
+                            0x401d2e: edx *= eax
+                            0x401d31: ecx = *(rbp - 372)
+                            0x401d37: rax = *(rbp - 696)
+                            0x401d3e: rax += 4
+                            0x401d42: eax = *(rax)
+                            0x401d44: eax *= ecx
+                            0x401d47: ecx = rdx + rax
+                            0x401d4a: edx = *(rbp - 368)
+                            0x401d50: rax = *(rbp - 696)
+                            0x401d57: rax += 8
+                            0x401d5b: eax = *(rax)
+                            0x401d5d: eax *= edx
+                            0x401d60: ecx += eax
+                            0x401d62: edx = *(rbp - 364)
+                            0x401d68: rax = *(rbp - 696)
+                            0x401d6f: rax += 12
+                            0x401d73: eax = *(rax)
+                            0x401d75: eax *= edx
+                            0x401d78: ecx -= eax
+                            0x401d7a: edx = *(rbp - 360)
+                            0x401d80: rax = *(rbp - 696)
+                            0x401d87: rax += 16
+                            0x401d8b: eax = *(rax)
+                            0x401d8d: eax *= edx
+                            0x401d90: ecx -= eax
+                            0x401d92: edx = *(rbp - 356)
+                            0x401d98: rax = *(rbp - 696)
+                            0x401d9f: rax += 20
+                            0x401da3: eax = *(rax)
+                            0x401da5: eax *= edx
+                            0x401da8: ecx -= eax
+                            0x401daa: edx = *(rbp - 352)
+                            0x401db0: rax = *(rbp - 696)
+                            0x401db7: rax += 24
+                            0x401dbb: eax = *(rax)
+                            0x401dbd: eax *= edx
+                            0x401dc0: ecx -= eax
+                            0x401dc2: edx = *(rbp - 348)
+                            0x401dc8: rax = *(rbp - 696)
+                            0x401dcf: rax += 28
+                            0x401dd3: eax = *(rax)
+                            0x401dd5: eax *= edx
+                            0x401dd8: ecx += eax
+                            0x401dda: edx = *(rbp - 344)
+                            0x401de0: rax = *(rbp - 696)
+                            0x401de7: rax += 32
+                            0x401deb: eax = *(rax)
+                            0x401ded: eax *= edx
+                            0x401df0: ecx -= eax
+                            0x401df2: edx = *(rbp - 340)
+                            0x401df8: rax = *(rbp - 696)
+                            0x401dff: rax += 36
+                            0x401e03: eax = *(rax)
+                            0x401e05: eax *= edx
+                            0x401e08: ecx += eax
+                            0x401e0a: edx = *(rbp - 336)
+                            0x401e10: rax = *(rbp - 696)
+                            0x401e17: rax += 40
+                            0x401e1b: eax = *(rax)
+                            0x401e1d: eax *= edx
+                            0x401e20: ecx -= eax
+                            0x401e22: edx = *(rbp - 332)
+                            0x401e28: rax = *(rbp - 696)
+                            0x401e2f: rax += 44
+                            0x401e33: eax = *(rax)
+                            0x401e35: eax *= edx
+                            0x401e38: ecx -= eax
+                            0x401e3a: edx = *(rbp - 328)
+                            0x401e40: rax = *(rbp - 696)
+                            0x401e47: rax += 48
+                            0x401e4b: eax = *(rax)
+                            0x401e4d: eax *= edx
+                            0x401e50: eax += ecx
+                            # 0x401e52: cmp eax, 0xfff496e3
+                            # 0x401e57: je 0x401e67
+                            if (eax != 4294219491) {
+                                0x401e59: jmp 0x401e5d
+                                0x401e5d: eax = 0
+                                0x401e62: jmp 0x4025d1
+                            } else {
+                                0x401e67: eax = *(rbp - 324)
+                                0x401e6d: neg eax
+                                0x401e6f: edx = eax
+                                0x401e71: rax = *(rbp - 696)
+                                0x401e78: eax = *(rax)
+                                0x401e7a: edx *= eax
+                                0x401e7d: ecx = *(rbp - 320)
+                                0x401e83: rax = *(rbp - 696)
+                                0x401e8a: rax += 4
+                                0x401e8e: eax = *(rax)
+                                0x401e90: eax *= ecx
+                                0x401e93: ecx = rdx + rax
+                                0x401e96: edx = *(rbp - 316)
+                                0x401e9c: rax = *(rbp - 696)
+                                0x401ea3: rax += 8
+                                0x401ea7: eax = *(rax)
+                                0x401ea9: eax *= edx
+                                0x401eac: ecx -= eax
+                                0x401eae: edx = *(rbp - 312)
+                                0x401eb4: rax = *(rbp - 696)
+                                0x401ebb: rax += 12
+                                0x401ebf: eax = *(rax)
+                                0x401ec1: eax *= edx
+                                0x401ec4: ecx -= eax
+                                0x401ec6: edx = *(rbp - 308)
+                                0x401ecc: rax = *(rbp - 696)
+                                0x401ed3: rax += 16
+                                0x401ed7: eax = *(rax)
+                                0x401ed9: eax *= edx
+                                0x401edc: ecx -= eax
+                                0x401ede: edx = *(rbp - 304)
+                                0x401ee4: rax = *(rbp - 696)
+                                0x401eeb: rax += 20
+                                0x401eef: eax = *(rax)
+                                0x401ef1: eax *= edx
+                                0x401ef4: ecx -= eax
+                                0x401ef6: edx = *(rbp - 300)
+                                0x401efc: rax = *(rbp - 696)
+                                0x401f03: rax += 24
+                                0x401f07: eax = *(rax)
+                                0x401f09: eax *= edx
+                                0x401f0c: ecx += eax
+                                0x401f0e: edx = *(rbp - 296)
+                                0x401f14: rax = *(rbp - 696)
+                                0x401f1b: rax += 28
+                                0x401f1f: eax = *(rax)
+                                0x401f21: eax *= edx
+                                0x401f24: ecx += eax
+                                0x401f26: edx = *(rbp - 292)
+                                0x401f2c: rax = *(rbp - 696)
+                                0x401f33: rax += 32
+                                0x401f37: eax = *(rax)
+                                0x401f39: eax *= edx
+                                0x401f3c: ecx -= eax
+                                0x401f3e: edx = *(rbp - 288)
+                                0x401f44: rax = *(rbp - 696)
+                                0x401f4b: rax += 36
+                                0x401f4f: eax = *(rax)
+                                0x401f51: eax *= edx
+                                0x401f54: ecx -= eax
+                                0x401f56: edx = *(rbp - 284)
+                                0x401f5c: rax = *(rbp - 696)
+                                0x401f63: rax += 40
+                                0x401f67: eax = *(rax)
+                                0x401f69: eax *= edx
+                                0x401f6c: ecx -= eax
+                                0x401f6e: edx = *(rbp - 280)
+                                0x401f74: rax = *(rbp - 696)
+                                0x401f7b: rax += 44
+                                0x401f7f: eax = *(rax)
+                                0x401f81: eax *= edx
+                                0x401f84: ecx += eax
+                                0x401f86: edx = *(rbp - 276)
+                                0x401f8c: rax = *(rbp - 696)
+                                0x401f93: rax += 48
+                                0x401f97: eax = *(rax)
+                                0x401f99: eax *= edx
+                                0x401f9c: ecx -= eax
+                                0x401f9e: eax = ecx
+                                # 0x401fa0: cmp eax, 0xff525e90
+                                # 0x401fa5: je 0x401fb5
+                                if (eax != 4283588240) {
+                                    0x401fa7: jmp 0x401fab
+                                    0x401fab: eax = 0
+                                    0x401fb0: jmp 0x4025d1
+                                } else {
+                                    0x401fb5: edx = *(rbp - 272)
+                                    0x401fbb: rax = *(rbp - 696)
+                                    0x401fc2: eax = *(rax)
+                                    0x401fc4: edx *= eax
+                                    0x401fc7: ecx = *(rbp - 268)
+                                    0x401fcd: rax = *(rbp - 696)
+                                    0x401fd4: rax += 4
+                                    0x401fd8: eax = *(rax)
+                                    0x401fda: eax *= ecx
+                                    0x401fdd: ecx = rdx + rax
+                                    0x401fe0: edx = *(rbp - 264)
+                                    0x401fe6: rax = *(rbp - 696)
+                                    0x401fed: rax += 8
+                                    0x401ff1: eax = *(rax)
+                                    0x401ff3: eax *= edx
+                                    0x401ff6: ecx -= eax
+                                    0x401ff8: edx = *(rbp - 260)
+                                    0x401ffe: rax = *(rbp - 696)
+                                    0x402005: rax += 12
+                                    0x402009: eax = *(rax)
+                                    0x40200b: eax *= edx
+                                    0x40200e: ecx += eax
+                                    0x402010: edx = *(rbp - 256)
+                                    0x402016: rax = *(rbp - 696)
+                                    0x40201d: rax += 16
+                                    0x402021: eax = *(rax)
+                                    0x402023: eax *= edx
+                                    0x402026: ecx += eax
+                                    0x402028: edx = *(rbp - 252)
+                                    0x40202e: rax = *(rbp - 696)
+                                    0x402035: rax += 20
+                                    0x402039: eax = *(rax)
+                                    0x40203b: eax *= edx
+                                    0x40203e: ecx += eax
+                                    0x402040: edx = *(rbp - 248)
+                                    0x402046: rax = *(rbp - 696)
+                                    0x40204d: rax += 24
+                                    0x402051: eax = *(rax)
+                                    0x402053: eax *= edx
+                                    0x402056: ecx -= eax
+                                    0x402058: edx = *(rbp - 244)
+                                    0x40205e: rax = *(rbp - 696)
+                                    0x402065: rax += 28
+                                    0x402069: eax = *(rax)
+                                    0x40206b: eax *= edx
+                                    0x40206e: ecx -= eax
+                                    0x402070: edx = *(rbp - 240)
+                                    0x402076: rax = *(rbp - 696)
+                                    0x40207d: rax += 32
+                                    0x402081: eax = *(rax)
+                                    0x402083: eax *= edx
+                                    0x402086: ecx -= eax
+                                    0x402088: edx = *(rbp - 236)
+                                    0x40208e: rax = *(rbp - 696)
+                                    0x402095: rax += 36
+                                    0x402099: eax = *(rax)
+                                    0x40209b: eax *= edx
+                                    0x40209e: ecx -= eax
+                                    0x4020a0: edx = *(rbp - 232)
+                                    0x4020a6: rax = *(rbp - 696)
+                                    0x4020ad: rax += 40
+                                    0x4020b1: eax = *(rax)
+                                    0x4020b3: eax *= edx
+                                    0x4020b6: ecx += eax
+                                    0x4020b8: edx = *(rbp - 228)
+                                    0x4020be: rax = *(rbp - 696)
+                                    0x4020c5: rax += 44
+                                    0x4020c9: eax = *(rax)
+                                    0x4020cb: eax *= edx
+                                    0x4020ce: ecx -= eax
+                                    0x4020d0: edx = *(rbp - 224)
+                                    0x4020d6: rax = *(rbp - 696)
+                                    0x4020dd: rax += 48
+                                    0x4020e1: eax = *(rax)
+                                    0x4020e3: eax *= edx
+                                    0x4020e6: eax += ecx
+                                    # 0x4020e8: cmp eax, 0xfffd7704
+                                    # 0x4020ed: je 0x4020fd
+                                    if (eax != 4294801156) {
+                                        0x4020ef: jmp 0x4020f3
+                                        0x4020f3: eax = 0
+                                        0x4020f8: jmp 0x4025d1
+                                    } else {
+                                        0x4020fd: eax = *(rbp - 220)
+                                        0x402103: neg eax
+                                        0x402105: edx = eax
+                                        0x402107: rax = *(rbp - 696)
+                                        0x40210e: eax = *(rax)
+                                        0x402110: edx *= eax
+                                        0x402113: ecx = *(rbp - 216)
+                                        0x402119: rax = *(rbp - 696)
+                                        0x402120: rax += 4
+                                        0x402124: eax = *(rax)
+                                        0x402126: eax *= ecx
+                                        0x402129: ecx = rdx + rax
+                                        0x40212c: edx = *(rbp - 212)
+                                        0x402132: rax = *(rbp - 696)
+                                        0x402139: rax += 8
+                                        0x40213d: eax = *(rax)
+                                        0x40213f: eax *= edx
+                                        0x402142: ecx -= eax
+                                        0x402144: edx = *(rbp - 208)
+                                        0x40214a: rax = *(rbp - 696)
+                                        0x402151: rax += 12
+                                        0x402155: eax = *(rax)
+                                        0x402157: eax *= edx
+                                        0x40215a: ecx += eax
+                                        0x40215c: edx = *(rbp - 204)
+                                        0x402162: rax = *(rbp - 696)
+                                        0x402169: rax += 16
+                                        0x40216d: eax = *(rax)
+                                        0x40216f: eax *= edx
+                                        0x402172: ecx -= eax
+                                        0x402174: edx = *(rbp - 200)
+                                        0x40217a: rax = *(rbp - 696)
+                                        0x402181: rax += 20
+                                        0x402185: eax = *(rax)
+                                        0x402187: eax *= edx
+                                        0x40218a: ecx -= eax
+                                        0x40218c: edx = *(rbp - 196)
+                                        0x402192: rax = *(rbp - 696)
+                                        0x402199: rax += 24
+                                        0x40219d: eax = *(rax)
+                                        0x40219f: eax *= edx
+                                        0x4021a2: ecx += eax
+                                        0x4021a4: edx = *(rbp - 192)
+                                        0x4021aa: rax = *(rbp - 696)
+                                        0x4021b1: rax += 28
+                                        0x4021b5: eax = *(rax)
+                                        0x4021b7: eax *= edx
+                                        0x4021ba: ecx += eax
+                                        0x4021bc: edx = *(rbp - 188)
+                                        0x4021c2: rax = *(rbp - 696)
+                                        0x4021c9: rax += 32
+                                        0x4021cd: eax = *(rax)
+                                        0x4021cf: eax *= edx
+                                        0x4021d2: ecx += eax
+                                        0x4021d4: edx = *(rbp - 184)
+                                        0x4021da: rax = *(rbp - 696)
+                                        0x4021e1: rax += 36
+                                        0x4021e5: eax = *(rax)
+                                        0x4021e7: eax *= edx
+                                        0x4021ea: ecx += eax
+                                        0x4021ec: edx = *(rbp - 180)
+                                        0x4021f2: rax = *(rbp - 696)
+                                        0x4021f9: rax += 40
+                                        0x4021fd: eax = *(rax)
+                                        0x4021ff: eax *= edx
+                                        0x402202: ecx += eax
+                                        0x402204: edx = *(rbp - 176)
+                                        0x40220a: rax = *(rbp - 696)
+                                        0x402211: rax += 44
+                                        0x402215: eax = *(rax)
+                                        0x402217: eax *= edx
+                                        0x40221a: ecx -= eax
+                                        0x40221c: edx = *(rbp - 172)
+                                        0x402222: rax = *(rbp - 696)
+                                        0x402229: rax += 48
+                                        0x40222d: eax = *(rax)
+                                        0x40222f: eax *= edx
+                                        0x402232: eax += ecx
+                                        # 0x402234: cmp eax, 0x897cbb
+                                        # 0x402239: je 0x402249
+                                        if (eax != 9010363) {
+                                            0x40223b: jmp 0x40223f
+                                            0x40223f: eax = 0
+                                            0x402244: jmp 0x4025d1
+                                        } else {
+                                            0x402249: eax = *(rbp - 168)
+                                            0x40224f: neg eax
+                                            0x402251: edx = eax
+                                            0x402253: rax = *(rbp - 696)
+                                            0x40225a: eax = *(rax)
+                                            0x40225c: edx *= eax
+                                            0x40225f: ecx = *(rbp - 164)
+                                            0x402265: rax = *(rbp - 696)
+                                            0x40226c: rax += 4
+                                            0x402270: eax = *(rax)
+                                            0x402272: eax *= ecx
+                                            0x402275: ecx = edx
+                                            0x402277: ecx -= eax
+                                            0x402279: edx = *(rbp - 160)
+                                            0x40227f: rax = *(rbp - 696)
+                                            0x402286: rax += 8
+                                            0x40228a: eax = *(rax)
+                                            0x40228c: eax *= edx
+                                            0x40228f: ecx -= eax
+                                            0x402291: edx = *(rbp - 156)
+                                            0x402297: rax = *(rbp - 696)
+                                            0x40229e: rax += 12
+                                            0x4022a2: eax = *(rax)
+                                            0x4022a4: eax *= edx
+                                            0x4022a7: ecx -= eax
+                                            0x4022a9: edx = *(rbp - 152)
+                                            0x4022af: rax = *(rbp - 696)
+                                            0x4022b6: rax += 16
+                                            0x4022ba: eax = *(rax)
+                                            0x4022bc: eax *= edx
+                                            0x4022bf: ecx -= eax
+                                            0x4022c1: edx = *(rbp - 148)
+                                            0x4022c7: rax = *(rbp - 696)
+                                            0x4022ce: rax += 20
+                                            0x4022d2: eax = *(rax)
+                                            0x4022d4: eax *= edx
+                                            0x4022d7: ecx += eax
+                                            0x4022d9: edx = *(rbp - 144)
+                                            0x4022df: rax = *(rbp - 696)
+                                            0x4022e6: rax += 24
+                                            0x4022ea: eax = *(rax)
+                                            0x4022ec: eax *= edx
+                                            0x4022ef: ecx += eax
+                                            0x4022f1: edx = *(rbp - 140)
+                                            0x4022f7: rax = *(rbp - 696)
+                                            0x4022fe: rax += 28
+                                            0x402302: eax = *(rax)
+                                            0x402304: eax *= edx
+                                            0x402307: ecx += eax
+                                            0x402309: edx = *(rbp - 136)
+                                            0x40230f: rax = *(rbp - 696)
+                                            0x402316: rax += 32
+                                            0x40231a: eax = *(rax)
+                                            0x40231c: eax *= edx
+                                            0x40231f: ecx -= eax
+                                            0x402321: edx = *(rbp - 132)
+                                            0x402327: rax = *(rbp - 696)
+                                            0x40232e: rax += 36
+                                            0x402332: eax = *(rax)
+                                            0x402334: eax *= edx
+                                            0x402337: ecx += eax
+                                            0x402339: edx = *(rbp - 128)
+                                            0x40233c: rax = *(rbp - 696)
+                                            0x402343: rax += 40
+                                            0x402347: eax = *(rax)
+                                            0x402349: eax *= edx
+                                            0x40234c: ecx += eax
+                                            0x40234e: edx = *(rbp - 124)
+                                            0x402351: rax = *(rbp - 696)
+                                            0x402358: rax += 44
+                                            0x40235c: eax = *(rax)
+                                            0x40235e: eax *= edx
+                                            0x402361: ecx -= eax
+                                            0x402363: edx = *(rbp - 120)
+                                            0x402366: rax = *(rbp - 696)
+                                            0x40236d: rax += 48
+                                            0x402371: eax = *(rax)
+                                            0x402373: eax *= edx
+                                            0x402376: eax += ecx
+                                            # 0x402378: cmp eax, 0xffc05f9f
+                                            # 0x40237d: je 0x40238d
+                                            if (eax != 4290797471) {
+                                                0x40237f: jmp 0x402383
+                                                0x402383: eax = 0
+                                                0x402388: jmp 0x4025d1
+                                            } else {
+                                                0x40238d: edx = *(rbp - 116)
+                                                0x402390: rax = *(rbp - 696)
+                                                0x402397: eax = *(rax)
+                                                0x402399: edx *= eax
+                                                0x40239c: ecx = *(rbp - 112)
+                                                0x40239f: rax = *(rbp - 696)
+                                                0x4023a6: rax += 4
+                                                0x4023aa: eax = *(rax)
+                                                0x4023ac: eax *= ecx
+                                                0x4023af: ecx = rdx + rax
+                                                0x4023b2: edx = *(rbp - 108)
+                                                0x4023b5: rax = *(rbp - 696)
+                                                0x4023bc: rax += 8
+                                                0x4023c0: eax = *(rax)
+                                                0x4023c2: eax *= edx
+                                                0x4023c5: ecx -= eax
+                                                0x4023c7: edx = *(rbp - 104)
+                                                0x4023ca: rax = *(rbp - 696)
+                                                0x4023d1: rax += 12
+                                                0x4023d5: eax = *(rax)
+                                                0x4023d7: eax *= edx
+                                                0x4023da: ecx -= eax
+                                                0x4023dc: edx = *(rbp - 100)
+                                                0x4023df: rax = *(rbp - 696)
+                                                0x4023e6: rax += 16
+                                                0x4023ea: eax = *(rax)
+                                                0x4023ec: eax *= edx
+                                                0x4023ef: ecx += eax
+                                                0x4023f1: edx = *(rbp - 96)
+                                                0x4023f4: rax = *(rbp - 696)
+                                                0x4023fb: rax += 20
+                                                0x4023ff: eax = *(rax)
+                                                0x402401: eax *= edx
+                                                0x402404: ecx += eax
+                                                0x402406: edx = *(rbp - 92)
+                                                0x402409: rax = *(rbp - 696)
+                                                0x402410: rax += 24
+                                                0x402414: eax = *(rax)
+                                                0x402416: eax *= edx
+                                                0x402419: ecx -= eax
+                                                0x40241b: edx = *(rbp - 88)
+                                                0x40241e: rax = *(rbp - 696)
+                                                0x402425: rax += 28
+                                                0x402429: eax = *(rax)
+                                                0x40242b: eax *= edx
+                                                0x40242e: ecx -= eax
+                                                0x402430: edx = *(rbp - 84)
+                                                0x402433: rax = *(rbp - 696)
+                                                0x40243a: rax += 32
+                                                0x40243e: eax = *(rax)
+                                                0x402440: eax *= edx
+                                                0x402443: ecx += eax
+                                                0x402445: edx = *(rbp - 80)
+                                                0x402448: rax = *(rbp - 696)
+                                                0x40244f: rax += 36
+                                                0x402453: eax = *(rax)
+                                                0x402455: eax *= edx
+                                                0x402458: ecx += eax
+                                                0x40245a: edx = *(rbp - 76)
+                                                0x40245d: rax = *(rbp - 696)
+                                                0x402464: rax += 40
+                                                0x402468: eax = *(rax)
+                                                0x40246a: eax *= edx
+                                                0x40246d: ecx -= eax
+                                                0x40246f: edx = *(rbp - 72)
+                                                0x402472: rax = *(rbp - 696)
+                                                0x402479: rax += 44
+                                                0x40247d: eax = *(rax)
+                                                0x40247f: eax *= edx
+                                                0x402482: ecx += eax
+                                                0x402484: edx = *(rbp - 68)
+                                                0x402487: rax = *(rbp - 696)
+                                                0x40248e: rax += 48
+                                                0x402492: eax = *(rax)
+                                                0x402494: eax *= edx
+                                                0x402497: eax += ecx
+                                                # 0x402499: cmp eax, 0x3e4761
+                                                # 0x40249e: je 0x4024ae
+                                                if (eax != 4081505) {
+                                                    0x4024a0: jmp 0x4024a4
+                                                    0x4024a4: eax = 0
+                                                    0x4024a9: jmp 0x4025d1
+                                                } else {
+                                                    0x4024ae: edx = *(rbp - 64)
+                                                    0x4024b1: rax = *(rbp - 696)
+                                                    0x4024b8: eax = *(rax)
+                                                    0x4024ba: edx *= eax
+                                                    0x4024bd: ecx = *(rbp - 60)
+                                                    0x4024c0: rax = *(rbp - 696)
+                                                    0x4024c7: rax += 4
+                                                    0x4024cb: eax = *(rax)
+                                                    0x4024cd: eax *= ecx
+                                                    0x4024d0: ecx = rdx + rax
+                                                    0x4024d3: edx = *(rbp - 56)
+                                                    0x4024d6: rax = *(rbp - 696)
+                                                    0x4024dd: rax += 8
+                                                    0x4024e1: eax = *(rax)
+                                                    0x4024e3: eax *= edx
+                                                    0x4024e6: ecx -= eax
+                                                    0x4024e8: edx = *(rbp - 52)
+                                                    0x4024eb: rax = *(rbp - 696)
+                                                    0x4024f2: rax += 12
+                                                    0x4024f6: eax = *(rax)
+                                                    0x4024f8: eax *= edx
+                                                    0x4024fb: ecx += eax
+                                                    0x4024fd: edx = *(rbp - 48)
+                                                    0x402500: rax = *(rbp - 696)
+                                                    0x402507: rax += 16
+                                                    0x40250b: eax = *(rax)
+                                                    0x40250d: eax *= edx
+                                                    0x402510: ecx += eax
+                                                    0x402512: edx = *(rbp - 44)
+                                                    0x402515: rax = *(rbp - 696)
+                                                    0x40251c: rax += 20
+                                                    0x402520: eax = *(rax)
+                                                    0x402522: eax *= edx
+                                                    0x402525: ecx -= eax
+                                                    0x402527: edx = *(rbp - 40)
+                                                    0x40252a: rax = *(rbp - 696)
+                                                    0x402531: rax += 24
+                                                    0x402535: eax = *(rax)
+                                                    0x402537: eax *= edx
+                                                    0x40253a: ecx -= eax
+                                                    0x40253c: edx = *(rbp - 36)
+                                                    0x40253f: rax = *(rbp - 696)
+                                                    0x402546: rax += 28
+                                                    0x40254a: eax = *(rax)
+                                                    0x40254c: eax *= edx
+                                                    0x40254f: ecx += eax
+                                                    0x402551: edx = *(rbp - 32)
+                                                    0x402554: rax = *(rbp - 696)
+                                                    0x40255b: rax += 32
+                                                    0x40255f: eax = *(rax)
+                                                    0x402561: eax *= edx
+                                                    0x402564: ecx += eax
+                                                    0x402566: edx = *(rbp - 28)
+                                                    0x402569: rax = *(rbp - 696)
+                                                    0x402570: rax += 36
+                                                    0x402574: eax = *(rax)
+                                                    0x402576: eax *= edx
+                                                    0x402579: ecx += eax
+                                                    0x40257b: edx = *(rbp - 24)
+                                                    0x40257e: rax = *(rbp - 696)
+                                                    0x402585: rax += 40
+                                                    0x402589: eax = *(rax)
+                                                    0x40258b: eax *= edx
+                                                    0x40258e: ecx -= eax
+                                                    0x402590: edx = *(rbp - 20)
+                                                    0x402593: rax = *(rbp - 696)
+                                                    0x40259a: rax += 44
+                                                    0x40259e: eax = *(rax)
+                                                    0x4025a0: eax *= edx
+                                                    0x4025a3: ecx += eax
+                                                    0x4025a5: edx = *(rbp - 16)
+                                                    0x4025a8: rax = *(rbp - 696)
+                                                    0x4025af: rax += 48
+                                                    0x4025b3: eax = *(rax)
+                                                    0x4025b5: eax *= edx
+                                                    0x4025b8: eax += ecx
+                                                    # 0x4025ba: cmp eax, 0x1b4945
+                                                    # 0x4025bf: je 0x4025cc
+                                                    if (eax != 1788229) {
+                                                        0x4025c1: jmp 0x4025c5
+                                                        0x4025c5: eax = 0
+                                                        0x4025ca: jmp 0x4025d1
+                                                    } else {
+                                                        0x4025cc: eax = 1
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    0x4025d1: rsi = *(rbp - 8)
+    # 0x4025d5: xor rsi, qword ptr fs:[0x28]
+    # 0x4025de: je 0x4025e5
+    if ((rsi ^= *(fs + 40)) != 0) {
+        0x4025e0: call (.plt) __stack_chk_fail
+    }
+    ret_0x4025e5:
+    0x4025e5: leave
+    0x4025e6: ret
+}
