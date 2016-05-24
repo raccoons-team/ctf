@@ -24,7 +24,7 @@ We started from:  *$ file baby-re*
 Then we reversed it using:
 [Reverse/PLASMA script](http://github.com/joelpx/plasma).  
 We found that there are only two important functions in baby-re binary: `main` and `CheckSolution`.  
-(reversed code: [main.reverse](main) and [CheckSolution.reverse](CheckSolution))  
+(reversed code: [main.reverse](main.reverse) and [CheckSolution.reverse](CheckSolution.reverse))  
 
 All what main does is to read 13 integers with `scanf("%d", &d)`, then it calls `CheckSolution`. Now if our input was proper it will end up printing the numbers in the same order as they were read from input, as chars, which should give the flag. Otherwise it will end with message "Wrong".
 
